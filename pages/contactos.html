@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../images/todotechlogo.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="https://kit.fontawesome.com/e577b0e2a9.js" crossorigin="anonymous"></script>
+  <title>TODOTECH | Contactos</title>
+</head>
+
+<body>
+  <header class="header">
+    <section class="rectanguloCabecera"></section>
+    <nav class="navbar navbar-expand-xl">
+      <div class="container-fluid">
+        <h1>TODOTECH</h1>
+        <a class="navbar-brand" href="../index.html"><img src="../images/logotipoheader2.png"
+            alt="Logotipo TODOTECH"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false"><i class="fa-solid fa-bars"></i> Categorías
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./microprocesadores.html">Microprocesadores</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./tarjetasdevideo.html">Tarjetas de video</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Periféricos</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./armatupc.html"><i class="fa-solid fa-desktop"></i> Armá tu
+                PC</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sponsors.html"><i class="fa-solid fa-heart"></i>
+                Sponsors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contactos.html"><i class="fa-solid fa-message"></i>
+                Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sobrenosotros.html"><i class="fa-solid fa-circle-question"></i> Sobre
+                Nosotros</a>
+            </li>
+          </ul>
+          <section class="settings">
+            <!-- Boton de usuario -->
+            <a href="#" class="userButton"><i class="navSettings fa-solid fa-user"></i> <strong class="settingsText">Usuario</strong></a>
+            <!-- Menú desplegable ajustes -->
+            <div class="dropdown">
+              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="navSettings fa-solid fa-gear"></i>
+                <strong class="settingsText">Ajustes</strong>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Modo Oscuro</a></li>
+                <li><a class="dropdown-item" href="#">Idioma</a></li>
+                <li><a class="dropdown-item" href="#">Otro</a></li>
+              </ul>
+            </div>
+          </section>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="¿Estás perdido?, úsame." aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="main paddingMain">
+    <!-- get: informacion no sensible | post: información sensible -->
+    <section class="gridContacto">
+      <form action="#" method="get">
+        <div class="gridContactoIzquierda">
+          <h4 class="paddingBottom">Consultar stock en camino</h4>
+          <!-- Formulario de nombre completo + padding -->
+          <label for="nombre-completo" name="nombre-completo" id="nombre-completo"></label>
+          <input type="text" placeholder="Nombre y apellido" name="nombre-completo" class="datosContacto">
+          <div class="paddingBottom"></div>
+          <!-- Formulario de correo electrónico + padding -->
+          <label for="email" name="email" id="email"></label>
+          <input type="email" placeholder="Correo electrónico" name="email" id="email" class="datosContacto">
+          <div class="paddingBottom"></div>
+          <!-- Checkbox newsletter + padding -->
+          <div class="newsletter">
+            <label for="checkbox" name="newsletter" id="newsletter">
+              <input type="checkbox" name="newsletter">
+              <span>Suscribirme al newsletter</span>
+            </label>
+          </div>
+          <div class="paddingBottom"></div>
+          <!-- Radio button elección de sexo-->
+          <label class="gapRadioContacto">
+            <input type="radio" name="sexo" value="hombre">
+            <span>Hombre</span>
+            <input type="radio" name="sexo" value="mujer">
+            <span>Mujer</span>
+            <input type="radio" name="sexo" value="otro">
+            <span>Otro</span>
+          </label>
+          <div class="paddingBottom"></div>
+          <!-- Cuadro de texto para escribir la consulta -->
+          <textarea name="consulta" id="consulta" cols="50" rows="10" class="textAreaContacto"></textarea>
+          <div class="paddingBottom"></div>
+          <!-- Formulario de selección de país -->
+          <div class="selectPosition">
+            <label for="pais" name="pais" id="seleccionarPais">
+              <div>
+                <select name="pais" class="select">
+                  <option value="seleccion">Seleccione su país</option>
+                  <option value="arg">Argentina</option>
+                  <option value="cl">Chile</option>
+                  <option value="mx">México</option>
+                  <option value="co">Colombia</option>
+                  <option value="ven">Venezuela</option>
+                </select>
+              </div>
+          </div>
+          </label>
+          <div class="paddingBottom"></div>
+          <!-- Botones de enviar y restablecer formularios -->
+          <div>
+            <label for="submit">
+              <input type="submit" value="Enviar consulta" class="enviarResetContacto">
+            </label>
+            <label for="reset">
+              <input type="reset" value="Restablecer" class="enviarResetContacto">
+            </label>
+          </div>
+      </form>
+      <div class="paddingBottom"></div>
+      <!-- Email y celular de la empresa -->
+      <div class="contactoEmpresa">
+        <h4>Contacto de la empresa</h4>
+        <p><i class="iconosColorCorporativoContacto fa-solid fa-at"></i>todotechempresa@gmail.com</p>
+        <p><i class="iconosColorCorporativoContacto fa-solid fa-phone"></i>+54 9 261
+          597-1527</p>
+      </div>
+      <!-- Mapa de los locales -->
+      </div>
+      <div class="gridContactoDerecha">
+        <h4>También puedes visitarnos en nuestro local</h4>
+        <p class="paddingBottom"><i class="iconosColorCorporativoContacto fa-solid fa-calendar-days"></i>Lunes a
+          viernes de 8:00 a 16:00.</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26804.487640899468!2d-68.876071589836!3d-32.88333397416152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e093ec45179bf%3A0x205a78f6d20efa3a!2sMendoza%2C%20Capital%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1653336383395!5m2!1ses-419!2sar"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" class="mapaContacto"></iframe>
+      </div>
+    </section>
+  </main>
+</body>
+<!-- Inicio footer -->
+<footer class="footer">
+  <section class="secciones">
+    <ul>
+      <p class="paddingBottom"><strong>Secciones</strong></p>
+      <li class="seccionesFooter">
+        <a href="../index.html">Inicio</a>
+        <a href="./categorias.html">Categorías</a>
+        <a href="./armatupc.html">Armá tu PC</a>
+        <a href="./sponsors.html">Sponsors</a>
+        <a href="./contactos.html">Contacto</a>
+        <a href="./sobrenosotros.html">Sobre Nosotros</a>
+      </li>
+    </ul>
+  </section>
+  <section class="botonesContacto">
+    <p><strong>Contacto</strong></p>
+    <a href="https://wa.me/5492615971527" class="socialFooter"><i
+        class="hoverRedesFooter fa-brands fa-whatsapp"></i></a>
+    <a href="https://instagram.com/nachotag_" class="socialFooter"><i
+        class="hoverRedesFooter fa-brands fa-instagram"></i></a>
+    <a href="https://github.com/juanigarciadev" class="socialFooter"><i
+        class="hoverRedesFooter fa-brands fa-github"></i></a>
+    <div class="ubicacionFooter">
+      <p><strong>Ubicacion</strong></p>
+      <a href="https://goo.gl/maps/L2QHynvorwT2Fm2s9">M5539 Las Heras, Mendoza</a>
+    </div>
+  </section>
+  <section class="metodosDePago">
+    <p class="paddingBottom"><strong>Métodos de pago</strong></p>
+    <div class="tarjetasFooterDiv">
+      <img src="../images/visa.svg" alt="Visa" class="tarjetasFooter">
+      <img src="../images/mastercard.svg" alt="Mastercard" class="tarjetasFooter">
+      <img src="../images/maestro.svg" alt="Maestro" class="tarjetasFooter">
+      <img src="../images/american-express.svg" alt="American Express" class="tarjetasFooter">
+      <img src="../images/western-union.svg" alt="Western Union" class="tarjetasFooter">
+      <img src="../images/paypal.svg" alt="PayPal" class="tarjetasFooter">
+    </div>
+  </section>
+  <section class="copyrightFooterContainer">
+    <p class="copyrightFooter">
+      Copyright © 2022 <a href="../index.html">TODOTECH</a> | Todos los derechos reservados.
+    </p>
+  </section>
+</footer>
+<!-- Final footer -->
+<script src="https://kit.fontawesome.com/e577b0e2a9.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

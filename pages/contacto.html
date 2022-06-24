@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="rectanguloCabecera"></section>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../images/logotipoheader2.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Categorías
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./perifericos.html">Microprocesadores</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./perifericos.html">Tarjetas de video</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./perifericos.html">Periféricos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./armatupc.html">Armá tu PC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sponsors.html">Sponsors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link paginaSeleccionada" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pagina" href="./sobrenosotros.html">Sobre Nosotros</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="¿Estás perdido?, úsame."
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <form class="was-validated">
+                <!-- Nombre, apellido y correo electrónico -->
+                <div class="row margin">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                    </div>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Correo electrónico</label>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control is-invalid" id="validationTextarea"
+                        placeholder="Escriba aquí su consulta" required></textarea>
+                    <div class="invalid-feedback">
+                        Por favor, escriba su consulta.
+                    </div>
+                </div>
+
+                <div class="form-check mb-3">
+                    <input type="checkbox" class="form-check-input" id="validationFormCheck1">
+                    <label class="form-check-label" for="validationFormCheck1">Suscribirme al newsletter</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked>
+                    <label class="form-check-label" for="validationFormCheck2">Hombre</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked>
+                    <label class="form-check-label" for="validationFormCheck2">Mujer</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked>
+                    <label class="form-check-label" for="validationFormCheck2">Otro</label>
+                </div>
+                <div class="margin"></div>
+                <div class="mb-3">
+                    <select class="form-select" required aria-label="select example">
+                        <option value="">Selecciona tu país</option>
+                        <option value="ar">Argentina</option>
+                        <option value="mx">México</option>
+                        <option value="col">Colombia</option>
+                        <option value="ven">Venezuela</option>
+                    </select>
+                    <div class="invalid-feedback">Por favor, selecciona tu país.</div>
+                </div>
+                <section class="botonesContacto">
+                    <div class="mb-3">
+                        <button class="btn btn-primary" type="submit">Enviar</button>
+                    </div>
+                    <div class="mb-3">
+                        <button class="btn btn-primary" type="reset">Restablecer</button>
+                    </div>
+                </section>
+            </form>
+        </section>
+    </main>
+  <!-- Inicio footer -->
+  <footer class="footer">
+    <div class="backgroundFooter"></div>
+  </footer>
+  <!-- Final footer -->
+    <script src="https://kit.fontawesome.com/e577b0e2a9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

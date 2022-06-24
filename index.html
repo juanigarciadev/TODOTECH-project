@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./images/todotechlogo.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>TODOTECH | Página principal</title>
+</head>
+
+<body>
+  <header class="header">
+    <section class="rectanguloCabecera"></section>
+      <nav class="navbar navbar-expand-xl">
+        <div class="container-fluid">
+          <h1>TODOTECH</h1>
+          <a class="navbar-brand" href="./index.html"><img src="./images/logotipoheader2.png"
+              alt="Logotipo TODOTECH"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false"><i class="fa-solid fa-bars"></i> Categorías
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./pages/microprocesadores.html">Microprocesadores</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="./pages/tarjetasdevideo.html">Tarjetas de video</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Periféricos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/armatupc.html"><i class="fa-solid fa-desktop"></i> Armá tu
+                  PC</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/sponsors.html"><i class="fa-solid fa-heart"></i>
+                  Sponsors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contactos.html"><i class="fa-solid fa-message"></i>
+                  Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/sobrenosotros.html"><i class="fa-solid fa-circle-question"></i> Sobre
+                  Nosotros</a>
+              </li>
+            </ul>
+            <section class="settings">
+              <!-- Boton de usuario -->
+              <a href="#" class="userButton"><i class="navSettings fa-solid fa-user"></i> <strong class="settingsText">Usuario</strong></a>
+              <!-- Menú desplegable ajustes -->
+              <div class="dropdown">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <i class="navSettings fa-solid fa-gear"></i>
+                  <strong class="settingsText">Ajustes</strong>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Modo Oscuro</a></li>
+                  <li><a class="dropdown-item" href="#">Idioma</a></li>
+                  <li><a class="dropdown-item" href="#">Otro</a></li>
+                </ul>
+              </div>
+            </section>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="¿Estás perdido?, úsame." aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Comienzo main -->
+    <main class="main">
+      <a href="https://wa.link/arwkhv" class="botonWhatsapp" target="_blank">
+        <i class="iconoWhatsapp fa-brands fa-whatsapp"></i>
+      </a>
+      <!-- Inicio slider promocional -->
+      <div id="carouselExampleCaptions" id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="7000">
+            <img src="./images/fotopromocional1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="7000">
+            <img src="./images/fotopromocional2.png"" class=" d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="7000">
+            <img src="./images/fotopromocional3.png"" class=" d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="7000">
+            <img src="./images/fotopromocional4.png"" class=" d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+      <!-- Inicio productos recomendados -->
+      <section class="sponsorsMain">
+        <div>
+          <a href="https://www.amd.com/es" target="_blank"><img src="./images/amd.png" alt="Logotipo AMD"
+              class="sliderSponsors imgSponsors"></a>
+        </div>
+        <div>
+          <a href="https://www.intel.la/content/www/xl/es/homepage.html" target="_blank"><img src="./images/intel.png"
+              alt="Logotipo Intel" class="sliderSponsors imgSponsors"></a>
+        </div>
+        <div>
+          <a href="https://redragon.es" target="_blank"><img src="./images/redragon.png" alt="Logotipo Redragon"
+              class="sliderSponsors imgSponsors"></a>
+        </div>
+        <div>
+          <a href="https://www.razer.com" target="_blank"><img src="./images/razer.png" alt="Logotipo Razer"
+              class="sliderSponsors imgSponsors"></a>
+        </div>
+        <div>
+          <a href="https://www.logitechstore.com.ar/logitech-g" target="_blank"><img src="./images/logitech.png"
+              alt="Logotipo Logitech G" class="sliderSponsors imgSponsors"></a>
+        </div>
+        <div>
+          <a href="https://www.hyperxgaming.com/es" target="_blank"><img src="./images/hyperx.png" alt="Logotipo HyperX"
+              class="sliderSponsors imgSponsors"></a>
+        </div>
+        <div>
+          <a href="https://www.corsair.com/lm/es/" target="_blank"><img src="./images/corsair.png"
+              alt="Logotipo Corsair" class="sliderSponsors imgSponsors"></a>
+        </div>
+        <div>
+          <a href="https://www.coolermaster.com" target="_blank"><img src="./images/coolermaster.png"
+              alt="Logotipo Coolermaster" class="sliderSponsors imgSponsors"></a>
+        </div>
+        <div>
+          <a href="https://www.asus.com/ar/" target="_blank"><img src="./images/asus.png" alt="Logotipo ASUS"
+              class="sliderSponsors imgSponsors"></a>
+        </div>
+      </section>
+      <section class="productosRecomendadosMain">
+        <h4 class="prodRecomTitulo paddingMain"><strong>OFERTAS IMPERDIBLES</strong></h4>
+        <div class="productosRecomendados">
+          <div class="prodRecomBanner">
+            <img src="./images/prodRecomBanner.png" alt="">
+          </div>
+          <div class="prodRecom1 prodRecomBoxShadow">
+            <a href="./pages/categorias.html"><img src="./images/prodRecomMonitores.png" alt=""></a>
+          </div>
+          <div class="prodRecom2 prodRecomBoxShadow">
+            <a href="./pages/categorias.html"><img src="./images/prodRecomTeclados.png" alt=""></a>
+          </div>
+          <div class="prodRecom3 prodRecomBoxShadow">
+            <a href="./pages/categorias.html"><img src="./images/prodRecomMouse.png" alt=""></a>
+          </div>
+          <div class="prodRecom4 prodRecomBoxShadow">
+            <a href="./pages/categorias.html"><img src="./images/prodRecomAuriculares.png" alt=""></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Final main -->
+    <!-- Inicio footer -->
+    <footer class="footer">
+      <section class="secciones">
+        <ul>
+          <p><strong>Secciones</strong></p>
+          <li class="seccionesFooter">
+            <a href="./index.html">Inicio</a>
+            <a href="./pages/categorias.html">Categorías</a>
+            <a href="./pages/armatupc.html">Armá tu PC</a>
+            <a href="./pages/sponsors.html">Sponsors</a>
+            <a href="./pages/contactos.html">Contacto</a>
+            <a href="./pages/sobrenosotros.html">Sobre Nosotros</a>
+          </li>
+        </ul>
+      </section>
+      <section class="botonesContacto">
+        <p><strong>Contacto</strong></p>
+        <a href="https://wa.me/5492615971527" class="socialFooter"><i
+            class="hoverRedesFooter fa-brands fa-whatsapp"></i></a>
+        <a href="https://instagram.com/nachotag_" class="socialFooter"><i
+            class="hoverRedesFooter fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/juanigarciadev" class="socialFooter"><i
+            class="hoverRedesFooter fa-brands fa-github"></i></a>
+        <div class="ubicacionFooter">
+          <p><strong>Ubicacion</strong></p>
+          <a href="https://goo.gl/maps/L2QHynvorwT2Fm2s9">M5539 Las Heras, Mendoza</a>
+        </div>
+      </section>
+      <section class="metodosDePago">
+        <p class="paddingBottom"><strong>Métodos de pago</strong></p>
+        <div class="tarjetasFooterDiv">
+          <img src="./images/visa.svg" alt="Visa" class="tarjetasFooter">
+          <img src="./images/mastercard.svg" alt="Mastercard" class="tarjetasFooter">
+          <img src="./images/maestro.svg" alt="Maestro" class="tarjetasFooter">
+          <img src="./images/american-express.svg" alt="American Express" class="tarjetasFooter">
+          <img src="./images/western-union.svg" alt="Western Union" class="tarjetasFooter">
+          <img src="./images/paypal.svg" alt="PayPal" class="tarjetasFooter">
+        </div>
+      </section>
+      <section class="copyrightFooterContainer">
+        <p class="copyrightFooter">
+          Copyright © 2022 <a href="./index.html">TODOTECH</a> | Todos los derechos reservados.
+        </p>
+      </section>
+    </footer>
+    <!-- Final footer -->
+    <script src="https://kit.fontawesome.com/e577b0e2a9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
