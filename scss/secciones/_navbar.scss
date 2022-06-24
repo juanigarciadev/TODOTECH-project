@@ -65,6 +65,9 @@
     background-color: var(--colorCorporativoDark);
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.293);
   }
+  &[type="submit"] {
+    --bs-btn-focus-shadow-rgb: none;
+  }
 }
 
 /* Estilo acordion "sobre nosotros" */

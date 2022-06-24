@@ -1,3 +1,7 @@
 # Node
 node_modules/
+package-lock.json
+package.json
+
+# Sass
 sass.md
