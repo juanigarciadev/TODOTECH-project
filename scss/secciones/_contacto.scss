@@ -26,12 +26,11 @@
   border: solid 1px black;
   cursor: pointer;
   justify-content: center;
-}
-
-.enviarResetContacto:hover {
-  background-color: var(--colorCorporativo);
-  color: #ffffff;
-  transition: 0.2s;
+  &:hover {
+    background-color: var(--colorCorporativo);
+    color: #ffffff;
+    transition: 0.2s;
+  }
 }
 
 .iconosColorCorporativoContacto {
