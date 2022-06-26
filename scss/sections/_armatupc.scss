@@ -1,22 +1,17 @@
 /* Elección de marca de CPU para el ensamble */
+
 .elegirMarcaPC {
   display: flex;
   justify-content: space-around;
   /* Contenedor logotipo Intel en elección de CPU para ensamble */
   .recuadroElegirMarcaPCIntel {
-    width: 29vw;
-    height: 28vh;
     background-image: url(../images/intelrecuadro.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+    @extend %recuadroElegirCpu;
   }
 
   /* Contenedor logotipo AMD en elección de CPU para ensamble */
   .recuadroElegirMarcaPCAMD {
-    width: 29vw;
-    height: 28vh;
     background-image: url(../images/amdrecuadro.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+    @extend %recuadroElegirCpu;
   }
 }

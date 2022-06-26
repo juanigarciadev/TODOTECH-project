@@ -18,8 +18,7 @@ h4 {
   line-height: 55px;
   bottom: 30px;
   right: 30px;
-  color: white;
-  background-color: #0df053;
+  @include colorFondoLetra(#0df053, white);
   border-radius: 50px;
   text-align: center;
   font-size: 30px;
@@ -27,8 +26,7 @@ h4 {
   z-index: 100;
   &:hover {
     text-decoration: none;
-    color: #0df053;
-    background-color: white;
+    @include colorFondoLetra(white, #0df053);
     transition: 0.2s;
   }
 }
@@ -81,11 +79,6 @@ h4 {
   grid-area: prodRecom1;
   background-color: #ebebeb;
 }
-.prodRecomBoxShadow:hover {
-  transform: scale(1.01);
-  transition: 0.2s;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
-}
 
 .prodRecom2 {
   grid-area: prodRecom2;
@@ -100,6 +93,12 @@ h4 {
 .prodRecom4 {
   grid-area: prodRecom4;
   background-color: #ebebeb;
+}
+
+.prodRecomBoxShadow:hover {
+  transform: scale(1.01);
+  transition: 0.2s;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
 }
 
 .fotosSlider {

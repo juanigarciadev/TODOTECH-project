@@ -1,9 +1,21 @@
-@import './secciones/sponsors';
-@import './secciones/armatupc';
-@import './secciones/sobrenosotros';
-@import './secciones/contacto';
-@import './secciones/footer';
-@import './secciones/index';
-@import './secciones/navbar';
-@import './secciones/reset-variables';
-@import './secciones/mediaquery';
+@import './utilities/extend';
+@import './utilities/mixins';
+@import './sections/sponsors';
+@import './sections/armatupc';
+@import './sections/sobrenosotros';
+@import './sections/contacto';
+@import './layout/footer';
+@import './sections/index';
+@import './layout/navbar';
+@import './sections/reset-variables';
+@import './utilities/mediaquery';
+
+
+body::-webkit-scrollbar {
+    width: 7px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgb(97, 97, 97);
+}

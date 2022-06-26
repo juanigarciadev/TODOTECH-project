@@ -1,4 +1,10 @@
 @charset "UTF-8";
+.elegirMarcaPC .recuadroElegirMarcaPCIntel, .elegirMarcaPC .recuadroElegirMarcaPCAMD {
+  width: 29vw;
+  height: 28vh;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
 /* Recuadro contenedor de las imagenes del HTML sponsors */
 .sponsorsRecuadro {
   width: 97vw;
@@ -14,17 +20,9 @@
   /* Contenedor logotipo Intel en elección de CPU para ensamble */
   /* Contenedor logotipo AMD en elección de CPU para ensamble */ }
   .elegirMarcaPC .recuadroElegirMarcaPCIntel {
-    width: 29vw;
-    height: 28vh;
-    background-image: url(../images/intelrecuadro.png);
-    background-size: contain;
-    background-repeat: no-repeat; }
+    background-image: url(../images/intelrecuadro.png); }
   .elegirMarcaPC .recuadroElegirMarcaPCAMD {
-    width: 29vw;
-    height: 28vh;
-    background-image: url(../images/amdrecuadro.png);
-    background-size: contain;
-    background-repeat: no-repeat; }
+    background-image: url(../images/amdrecuadro.png); }
 
 .sobreNosotrosTexto {
   max-width: 95vw; }
@@ -49,10 +47,11 @@
   width: 20vw;
   height: 30px;
   border-radius: 5px;
-  background-color: white;
   border: solid 1px black;
   cursor: pointer;
-  justify-content: center; }
+  justify-content: center;
+  background-color: #fff;
+  color: #000; }
   .enviarResetContacto:hover {
     background-color: var(--colorCorporativo);
     color: #ffffff;
@@ -173,8 +172,8 @@ h4 {
   line-height: 55px;
   bottom: 30px;
   right: 30px;
-  color: white;
   background-color: #0df053;
+  color: white;
   border-radius: 50px;
   text-align: center;
   font-size: 30px;
@@ -182,8 +181,8 @@ h4 {
   z-index: 100; }
   .botonWhatsapp:hover {
     text-decoration: none;
-    color: #0df053;
     background-color: white;
+    color: #0df053;
     transition: 0.2s; }
 
 .sponsorsMain {
@@ -226,11 +225,6 @@ h4 {
   grid-area: prodRecom1;
   background-color: #ebebeb; }
 
-.prodRecomBoxShadow:hover {
-  transform: scale(1.01);
-  transition: 0.2s;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3); }
-
 .prodRecom2 {
   grid-area: prodRecom2;
   background-color: #ebebeb; }
@@ -242,6 +236,11 @@ h4 {
 .prodRecom4 {
   grid-area: prodRecom4;
   background-color: #ebebeb; }
+
+.prodRecomBoxShadow:hover {
+  transform: scale(1.01);
+  transition: 0.2s;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3); }
 
 .fotosSlider {
   width: 100vw;
@@ -357,7 +356,7 @@ h1 {
 
 :root {
   --colorCorporativo: #ff0038;
-  /* --colorCorporativoLight: #ffa5b89f; */
+  --colorCorporativoLight: #ffa5b89f;
   --colorCorporativoDark: #e00131;
   --colorFondo: #f4f4f4; }
 
@@ -817,3 +816,10 @@ body {
     grid-template-columns: repeat(3, 2%);
     grid-template-rows: 2% 2%;
     justify-content: center; } }
+
+body::-webkit-scrollbar {
+  width: 7px;
+  background: rgba(255, 255, 255, 0.9); }
+
+body::-webkit-scrollbar-thumb {
+  background: #616161; }
