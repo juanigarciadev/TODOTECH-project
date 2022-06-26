@@ -5,3 +5,6 @@ package.json
 
 # Sass
 sass.md
+
+# VSCode
+.vscode/
