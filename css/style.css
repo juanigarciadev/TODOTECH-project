@@ -358,7 +358,9 @@ h1 {
   --colorCorporativo: #ff0038;
   --colorCorporativoLight: #ffa5b89f;
   --colorCorporativoDark: #e00131;
-  --colorFondo: #f4f4f4; }
+  --colorFondo: #f4f4f4;
+  --darkMode: #181818;
+  --lightDarkMode: #2e2e2e; }
 
 * {
   font-family: sans-serif;
