@@ -1,3 +1,9 @@
+@media screen and (max-width: 2560px) and (min-width: 1440px) {
+  .bannerArmaTuPcMobile {
+    display: none;
+  }
+}
+
 /* Laptop L  */
 @media screen and (max-width: 1440px) {
   .main {
@@ -9,6 +15,16 @@
   .navbar i {
     font-size: 18px;
   }
+  .productosRecomendados {
+    justify-items: center;
+    grid-template-columns: 0.2fr 0.2fr;
+    grid-template-rows: 1fr;
+    padding-bottom: 20px;
+    grid-template-areas:
+      "prodRecomBanner prodRecomBanner"
+      "prodRecom1 prodRecom2"
+      "prodRecom3 prodRecom4";
+  }
   .botonWhatsapp {
     font-size: 40px;
     width: 60px;
@@ -17,6 +33,9 @@
   }
   .sliderSponsors {
     height: 110px;
+  }
+  .bannerArmaTuPcMobile {
+    display: none;
   }
   .datosContacto {
     font-size: 20px;
@@ -195,7 +214,13 @@
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
   }
-
+  .bannerArmaTuPc {
+    display: none;
+  }
+  .bannerArmaTuPcMobile {
+    display: block;
+    max-width: 500px;
+  }
   .datosContacto {
     font-size: 14px;
     width: 250px;
@@ -276,11 +301,16 @@
     height: 50px;
     line-height: 50px;
   }
-
+  .bannerArmaTuPc {
+    display: none;
+  }
+  .bannerArmaTuPcMobile {
+    display: block;
+    max-width: 420px;
+  }
   .contactoEmpresa {
     text-align: center;
   }
-
   .gridContacto {
     display: flex;
     flex-direction: column;
@@ -422,7 +452,13 @@
     height: 40px;
     line-height: 40px;
   }
-
+  .bannerArmaTuPc {
+    display: none;
+  }
+  .bannerArmaTuPcMobile {
+    display: block;
+    max-width: 325px;
+  }
   .contactoEmpresa {
     text-align: center;
   }
@@ -552,7 +588,13 @@
   .productosRecomendados img {
     width: 280px;
   }
-
+  .bannerArmaTuPc {
+    display: none;
+  }
+  .bannerArmaTuPcMobile {
+    display: block;
+    max-width: 302px;
+  }
   .enviarResetContacto {
     width: 100px;
   }
@@ -589,7 +631,13 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
-
+  .bannerArmaTuPc {
+    display: none;
+  }
+  .bannerArmaTuPcMobile {
+    display: block;
+    width: 265px;
+  }
   .enviarResetContacto {
     width: 100px;
   }
@@ -621,7 +669,7 @@
     align-items: center;
     padding-right: 33px;
   }
-  
+
   .socialFooter {
     font-size: 16px;
   }
