@@ -8,3 +8,7 @@ sass.md
 
 # VSCode
 .vscode/
+
+#Javascript temporalmente (para no perder código de interés)
+js/
+main.js

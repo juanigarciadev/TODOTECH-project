@@ -1,8 +1,6 @@
-/* Recuadro contenedor de las imagenes del HTML sponsors */
-.sponsorsRecuadro {
-  width: 97vw;
-  height: 15vh;
-  background-image: url(../images/marcassponsor.png);
-  background-color: #ffffff;
-  background-size: contain;
+.cardSponsors {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
+
