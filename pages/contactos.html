@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="todotech, stock, consulta, contacto"/>
-  <meta name="description" content="¿Tenés dudas? te proporcionamos las formas de contactarnos. Excelente financiación, garantía de principio a fin y atención al cliente.">
+  <meta name="keywords" content="todotech, stock, consulta, contacto" />
+  <meta name="description"
+    content="¿Tenés dudas? te proporcionamos las formas de contactarnos. Excelente financiación, garantía de principio a fin y atención al cliente.">
   <link rel="shortcut icon" href="../images/todotechlogo.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/style.css" />
@@ -64,7 +65,8 @@
           </ul>
           <section class="settings">
             <!-- Boton de usuario -->
-            <a href="#" class="userButton"><i class="navSettings fa-solid fa-user"></i> <strong class="settingsText">Usuario</strong></a>
+            <a href="#" class="userButton"><i class="navSettings fa-solid fa-user"></i> <strong
+                class="settingsText">Usuario</strong></a>
             <div class="dropdown">
               <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
                 aria-expanded="false">
@@ -105,26 +107,8 @@
           <label for="email" name="email" id="email"></label>
           <input type="email" placeholder="Correo electrónico" name="email" id="email" class="datosContacto">
           <div class="paddingBottom"></div>
-          <!-- Checkbox newsletter + padding -->
-          <div class="newsletter">
-            <label for="checkbox" name="newsletter" id="newsletter">
-              <input type="checkbox" name="newsletter">
-              <span>Suscribirme al newsletter</span>
-            </label>
-          </div>
-          <div class="paddingBottom"></div>
-          <!-- Radio button elección de sexo-->
-          <label class="gapRadioContacto">
-            <input type="radio" name="sexo" value="hombre">
-            <span>Hombre</span>
-            <input type="radio" name="sexo" value="mujer">
-            <span>Mujer</span>
-            <input type="radio" name="sexo" value="otro">
-            <span>Otro</span>
-          </label>
-          <div class="paddingBottom"></div>
           <!-- Cuadro de texto para escribir la consulta -->
-          <textarea name="consulta" id="consulta" cols="50" rows="10" class="textAreaContacto"></textarea>
+          <textarea name="consulta" placeholder="Escriba aquí su consulta." id="consulta" cols="50" rows="10" class="textAreaContacto"></textarea>
           <div class="paddingBottom"></div>
           <!-- Formulario de selección de país -->
           <div class="selectPosition">
@@ -142,8 +126,16 @@
           </div>
           </label>
           <div class="paddingBottom"></div>
+          <!-- Checkbox newsletter + padding -->
+          <div class="newsletter">
+            <label for="checkbox" name="newsletter" id="newsletter">
+              <input type="checkbox" name="newsletter">
+              <span>Suscribirme al newsletter</span>
+            </label>
+          </div>
+          <div class="paddingBottom"></div>
           <!-- Botones de enviar y restablecer formularios -->
-          <div>
+          <div class="text-center">
             <label for="submit">
               <input type="submit" value="Enviar consulta" class="enviarResetContacto">
             </label>

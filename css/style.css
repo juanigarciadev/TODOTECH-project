@@ -486,7 +486,9 @@ body {
   color: var(--colorCorporativo); }
 
 @media screen and (max-width: 2560px) and (min-width: 1440px) {
-  .bannerArmaTuPcMobile {
+  .bannerArmaTuPcMobile, .microprocesadorIntelMobile, .microprocesadorAmdMobile {
+    display: none; }
+  .tarjetaDeVideoNvidiaMobile, .tarjetaDeVideoAmdMobile, .tarjetaDeVideoIntelMobile {
     display: none; } }
 
 /* Laptop L  */
@@ -510,7 +512,9 @@ body {
     line-height: 60px; }
   .sliderSponsors {
     height: 110px; }
-  .bannerArmaTuPcMobile {
+  .bannerArmaTuPcMobile, .microprocesadorIntelMobile, .microprocesadorAmdMobile {
+    display: none; }
+  .tarjetaDeVideoNvidiaMobile, .tarjetaDeVideoAmdMobile, .tarjetaDeVideoIntelMobile {
     display: none; }
   .datosContacto {
     font-size: 20px;
@@ -577,6 +581,10 @@ body {
     line-height: 45px; }
   .sliderSponsors {
     height: 90px; }
+  .bannerArmaTuPcMobile, .microprocesadorIntelMobile, .microprocesadorAmdMobile {
+    display: none; }
+  .tarjetaDeVideoNvidiaMobile, .tarjetaDeVideoAmdMobile, .tarjetaDeVideoIntelMobile {
+    display: none; }
   .datosContacto {
     font-size: 15px;
     width: 250px;
@@ -638,9 +646,14 @@ body {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr; }
-  .bannerArmaTuPc {
+  .bannerArmaTuPc, .microprocesadorIntel, .microprocesadorAmd {
     display: none; }
-  .bannerArmaTuPcMobile {
+  .bannerArmaTuPcMobile, .microprocesadorIntelMobile, .microprocesadorAmdMobile {
+    display: block;
+    max-width: 500px; }
+  .tarjetaDeVideoNvidia, .tarjetaDeVideoAmd, .tarjetaDeVideoIntel {
+    display: none; }
+  .tarjetaDeVideoNvidiaMobile, .tarjetaDeVideoAmdMobile, .tarjetaDeVideoIntelMobile {
     display: block;
     max-width: 500px; }
   .datosContacto {
@@ -698,9 +711,14 @@ body {
     width: 50px;
     height: 50px;
     line-height: 50px; }
-  .bannerArmaTuPc {
+  .bannerArmaTuPc, .microprocesadorIntel, .microprocesadorAmd {
     display: none; }
-  .bannerArmaTuPcMobile {
+  .bannerArmaTuPcMobile, .microprocesadorIntelMobile, .microprocesadorAmdMobile {
+    display: block;
+    max-width: 420px; }
+  .tarjetaDeVideoNvidia, .tarjetaDeVideoAmd, .tarjetaDeVideoIntel {
+    display: none; }
+  .tarjetaDeVideoNvidiaMobile, .tarjetaDeVideoAmdMobile, .tarjetaDeVideoIntelMobile {
     display: block;
     max-width: 420px; }
   .contactoEmpresa {
@@ -793,9 +811,14 @@ body {
     width: 40px;
     height: 40px;
     line-height: 40px; }
-  .bannerArmaTuPc {
+  .bannerArmaTuPc, .microprocesadorIntel, .microprocesadorAmd {
     display: none; }
-  .bannerArmaTuPcMobile {
+  .bannerArmaTuPcMobile, .microprocesadorIntelMobile, .microprocesadorAmdMobile {
+    display: block;
+    max-width: 325px; }
+  .tarjetaDeVideoNvidia, .tarjetaDeVideoAmd, .tarjetaDeVideoIntel {
+    display: none; }
+  .tarjetaDeVideoNvidiaMobile, .tarjetaDeVideoAmdMobile, .tarjetaDeVideoIntelMobile {
     display: block;
     max-width: 325px; }
   .contactoEmpresa {
@@ -878,20 +901,37 @@ body {
     transform: scale(1); }
   .productosRecomendados img {
     width: 280px; }
-  .bannerArmaTuPc {
+  .bannerArmaTuPc, .microprocesadorIntel, .microprocesadorAmd {
     display: none; }
-  .bannerArmaTuPcMobile {
+  .bannerArmaTuPcMobile, .microprocesadorIntelMobile, .microprocesadorAmdMobile {
+    display: block;
+    max-width: 302px; }
+  .tarjetaDeVideoNvidia, .tarjetaDeVideoAmd, .tarjetaDeVideoIntel {
+    display: none; }
+  .tarjetaDeVideoNvidiaMobile, .tarjetaDeVideoAmdMobile, .tarjetaDeVideoIntelMobile {
     display: block;
     max-width: 302px; }
   .enviarResetContacto {
     width: 100px; }
+  .footer {
+    display: flex;
+    flex-direction: column; }
+  .seccionesFooter {
+    text-align: center; }
+  .secciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 33px; }
   .socialFooter {
     font-size: 16px; }
   .tarjetasFooter {
-    height: 13px; }
+    display: flex;
+    height: 13px;
+    justify-content: center; }
   .tarjetasFooterDiv {
-    grid-template-columns: repeat(3, 10%);
-    grid-template-rows: 4% 4%;
+    grid-template-columns: repeat(3, 2%);
+    grid-template-rows: 2% 2%;
     justify-content: center; } }
 
 /* Mobile S */
@@ -906,11 +946,16 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr); }
-  .bannerArmaTuPc {
+  .bannerArmaTuPc, .microprocesadorIntel, .microprocesadorAmd {
     display: none; }
-  .bannerArmaTuPcMobile {
+  .bannerArmaTuPcMobile, .microprocesadorIntelMobile, .microprocesadorAmdMobile {
     display: block;
-    width: 265px; }
+    max-width: 265px; }
+  .tarjetaDeVideoNvidia, .tarjetaDeVideoAmd, .tarjetaDeVideoIntel {
+    display: none; }
+  .tarjetaDeVideoNvidiaMobile, .tarjetaDeVideoAmdMobile, .tarjetaDeVideoIntelMobile {
+    display: block;
+    max-width: 265px; }
   .enviarResetContacto {
     width: 100px; }
   .sliderSponsors {
