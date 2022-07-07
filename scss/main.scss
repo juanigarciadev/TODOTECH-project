@@ -10,6 +10,9 @@
 @import './sections/reset-variables';
 @import './utilities/mediaquery';
 
+.divider {
+    margin: 0px;
+}
 
 body::-webkit-scrollbar {
     width: 7px;

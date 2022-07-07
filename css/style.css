@@ -985,6 +985,9 @@ body {
     grid-template-rows: 2% 2%;
     justify-content: center; } }
 
+.divider {
+  margin: 0px; }
+
 body::-webkit-scrollbar {
   width: 7px;
   background: rgba(255, 255, 255, 0.9); }
