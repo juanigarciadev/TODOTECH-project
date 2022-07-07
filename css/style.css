@@ -852,6 +852,8 @@ body {
     width: 100px;
     margin-left: auto;
     margin-right: auto; }
+  .enviarResetDiv {
+    text-align: center; }
   .mapaContacto {
     width: 260px;
     height: 260px;
@@ -913,6 +915,8 @@ body {
     max-width: 302px; }
   .enviarResetContacto {
     width: 100px; }
+  .enviarResetDiv {
+    text-align: center; }
   .footer {
     display: flex;
     flex-direction: column; }
@@ -958,6 +962,8 @@ body {
     max-width: 265px; }
   .enviarResetContacto {
     width: 100px; }
+  .enviarResetDiv {
+    text-align: center; }
   .sliderSponsors {
     height: 50px; }
   .sliderSponsors:hover {
