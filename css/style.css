@@ -494,6 +494,14 @@ body {
     background-color: #181818; }
   body.dark .div-remaining {
     background-color: #202020; }
+  body.dark .accordion-button {
+    background-color: #181818;
+    color: white; }
+  body.dark .accordion-header {
+    background-color: #181818; }
+  body.dark .accordion-body {
+    color: white;
+    background-color: #2e2e2e; }
 
 /* Solución para imagenes borrosas al usar "transform: scale()", sacado de stack overflow */
 .imgSponsors {
