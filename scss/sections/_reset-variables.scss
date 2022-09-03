@@ -20,6 +20,54 @@ body {
   /* Eliminar scroll lateral */
   overflow-x: hidden;
   background-color: var(--colorFondo);
+
+  &.dark {
+    // Navbar
+    .navbar {
+      color: white;
+      background-color: #181818;
+    }
+    .navbar-brand {
+      content: url("../images/logotipoheaderblanco.png")
+    }
+    .nav-link {
+      color: white;
+      &:hover {
+        color: var(--colorCorporativo);
+        transition: all .3s;
+      }
+    }
+    .navSettings {
+      color: white;
+      &:hover {
+        color: var(--colorCorporativo);
+        transition: all .3s;
+      }
+    }
+    .dropdown-menu {
+      background-color: #181818;
+    }
+    .dropdown-toggle {
+      color: white;
+    }
+    .dropdown-item {
+      color: white;
+    }
+    // Sponsors index.html
+    .sponsorsMain {
+      background-color: #181818;
+    }
+    .imgSponsors, .card-img-top {
+      filter: invert(100%);
+    }
+    .main {
+      color: white;
+      background-color: #202020;
+    }
+    .sponsorCard {
+      background-color: #181818;
+    }
+  }
 }
 
 /* Solución para imagenes borrosas al usar "transform: scale()", sacado de stack overflow */

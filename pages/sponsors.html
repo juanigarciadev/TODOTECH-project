@@ -66,7 +66,7 @@
           <section class="settings">
             <hr class="divider">
             <!-- Carrito -->
-            <a href="#"><i class="navSettings fa-solid fa-cart-arrow-down"></i><strong
+            <a href="#"><i class="navSettings fas fa-shopping-cart"></i><strong
                 class="settingsText">Carrito</strong></a>
             <!-- Boton de usuario -->
             <a href="#" class="userButton"><i class="navSettings fa-solid fa-user"></i> <strong
@@ -79,7 +79,7 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <!-- Modo oscuro -->
-                <li><a class="dropdown-item" href="">Modo Oscuro</a>
+                <li id="switchModoOscuro"><a class="dropdown-item" href="">Modo Oscuro</a>
                 </li>
                 <hr class="dropdown-divider">
                 <!-- Alternar ingles-español -->
@@ -98,100 +98,101 @@
     </nav>
   </header>
   <!-- Comienzo main -->
-  <section class="container sponsorsAreaTexto">
     <main class="main paddingMain">
+      <section class="container sponsorsAreaTexto"></section>
       <h4 class="paddingBottom text-center">Marcas que nos apoyan:</h4>
       <p class="text-center">Les agradecemos enormemente a las marcas que nos apoyan, gracias a ellas podemos hacer
         posibles muchas de las cosas que les ofrecemos a los usuarios para que se sientan satisfechos de principio a fin
         en el proceso de armado de una PC, compra de componentes por separado o periféricos. Nuevamente, gracias por
         formar parte de la familia <strong>TODOTECH</strong>.</p>
+      </section>
+      <!-- Cards sponsors AMD, Intel y Redragon -->
+      <section class="cardContainerSponsors row container text-center">
+        <!-- Card AMD -->
+        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 col-xs-12 card sponsorCard">
+          <div class="card-img-top sponsorsImagenAMD"></div>
+          <div class="card-body cardCuerpo">
+            <h5 class="card-title">PRODUCTOS AMD</h5>
+            <p class="card-text">¡Prueba la nueva serie 7000 de procesadores AMD! Ahora a 5.5GHz.</p>
+            <a href="https://www.amd.com/es" target="_blank" class="btn btn-primary">Visitar sitio web</a>
+          </div>
+        </div>
+        <!-- Card Intel -->
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card sponsorCard">
+          <div class="card-img-top sponsorsImagenIntel"></div>
+          <div class="card-body cardCuerpo">
+            <h5 class="card-title">PRODUCTOS Intel</h5>
+            <p class="card-text">Ya a la venta la nueva GPU de Intel, Intel ARC. Lista para competir.</p>
+            <a href="https://www.intel.la/content/www/xl/es/homepage.html" target="_blank" class="btn btn-primary">Visitar sitio web</a>
+          </div>
+        </div>
+        <!-- Card Redragon -->
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card sponsorCard">
+          <div class="card-img-top sponsorsImagenRedragon"></div>
+          <div class="card-body cardCuerpo">
+            <h5 class="card-title">PRODUCTOS Redragon</h5>
+            <p class="card-text">Redragon, la marca más vendida en América Latina y la mejor precio/calidad</p>
+            <a href="https://redragon.es/s" target="_blank" class="btn btn-primary">Visitar sitio web</a>
+          </div>
+        </div>
+        <!-- Card Razer -->
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card sponsorCard">
+          <div class="card-img-top sponsorsImagenRazer"></div>
+          <div class="card-body cardCuerpo">
+            <h5 class="card-title">PRODUCTOS Razer</h5>
+            <p class="card-text">¿Buscando periféricos duraderos? Encuéntralos en Razer</p>
+            <a href="https://www.razer.com/" target="_blank" class="btn btn-primary">Visitar sitio web</a>
+          </div>
+        </div>
+        <!-- Card Logitech -->
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card sponsorCard">
+          <div class="card-img-top sponsorsImagenLogitech"></div>
+          <div class="card-body cardCuerpo">
+            <h5 class="card-title">PRODUCTOS Logitech</h5>
+            <p class="card-text">Prueba nuestros nuevos periféricos de la rama Logitech G.</p>
+            <a href="https://www.logitechstore.com.ar/logitech-g" target="_blank" class="btn btn-primary">Visitar sitio web</a>
+          </div>
+        </div>
+        <!-- Card HyperX -->
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card sponsorCard">
+          <div class="card-img-top sponsorsImagenHyperX"></div>
+          <div class="card-body cardCuerpo">
+            <h5 class="card-title">PRODUCTOS HyperX</h5>
+            <p class="card-text">Lo mejor en micrófonos y periféricos inalámbricos. Nuevo HyperX Quadcast S RGB</p>
+            <a href="https://www.hyperxgaming.com/es" target="_blank" class="btn btn-primary">Visitar sitio web</a>
+          </div>
+        </div>
+        <!-- Card Corsair -->
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card sponsorCard">
+          <div class="card-img-top sponsorsImagenCorsair"></div>
+          <div class="card-body cardCuerpo">
+            <h5 class="card-title">PRODUCTOS Corsair</h5>
+            <p class="card-text">Prueba nuestras RAM Vengeance, principales competidoras en velocidad del mercado.</p>
+            <a href="https://www.corsair.com/lm/es/" target="_blank" class="btn btn-primary">Visitar sitio web</a>
+          </div>
+        </div>
+        <!-- Card Coolermaster -->
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card sponsorCard">
+          <div class="card-img-top sponsorsImagenCoolermaster"></div>
+          <div class="card-body cardCuerpo">
+            <h5 class="card-title">PRODUCTOS Coolermaster</h5>
+            <p class="card-text">¿Buscando una fuente confiable y duradera? Visítanos.</p>
+            <a href="https://www.coolermaster.com/" target="_blank" class="btn btn-primary">Visitar sitio web</a>
+          </div>
+        </div>
+        <!-- Card ASUS -->
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card sponsorCard">
+          <div class="card-img-top sponsorsImagenAsus"></div>
+          <div class="card-body cardCuerpo">
+            <h5 class="card-title">PRODUCTOS ASUS</h5>
+            <p class="card-text">Líderes en el mercado de portatiles para gaming y diseño.</p>
+            <a href="https://www.asus.com/ar/" target="_blank" class="btn btn-primary">Visitar sitio web</a>
+          </div>
+        </div>
+        <div class="paddingBottom"></div>
+      </section>
+    </main>
   </section>
-  <!-- Cards sponsors AMD, Intel y Redragon -->
-  <section class="cardContainerSponsors row container text-center">
-    <!-- Card AMD -->
-    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 col-xs-12 card sponsorCard">
-      <div class="card-img-top sponsorsImagenAMD"></div>
-      <div class="card-body cardCuerpo">
-        <h5 class="card-title">PRODUCTOS AMD</h5>
-        <p class="card-text">¡Prueba la nueva serie 7000 de procesadores AMD! Ahora a 5.5GHz.</p>
-        <a href="https://www.amd.com/es" target="_blank" class="btn btn-primary">Visitar sitio web</a>
-      </div>
-    </div>
-    <!-- Card Intel -->
-    <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card sponsorCard">
-      <div class="card-img-top sponsorsImagenIntel"></div>
-      <div class="card-body cardCuerpo">
-        <h5 class="card-title">PRODUCTOS Intel</h5>
-        <p class="card-text">Ya a la venta la nueva GPU de Intel, Intel ARC. Lista para competir.</p>
-        <a href="https://www.intel.la/content/www/xl/es/homepage.html" target="_blank" class="btn btn-primary">Visitar sitio web</a>
-      </div>
-    </div>
-    <!-- Card Redragon -->
-    <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card sponsorCard">
-      <div class="card-img-top sponsorsImagenRedragon"></div>
-      <div class="card-body cardCuerpo">
-        <h5 class="card-title">PRODUCTOS Redragon</h5>
-        <p class="card-text">Redragon, la marca más vendida en América Latina y la mejor precio/calidad</p>
-        <a href="https://redragon.es/s" target="_blank" class="btn btn-primary">Visitar sitio web</a>
-      </div>
-    </div>
-    <!-- Card Razer -->
-    <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card sponsorCard">
-      <div class="card-img-top sponsorsImagenRazer"></div>
-      <div class="card-body cardCuerpo">
-        <h5 class="card-title">PRODUCTOS Razer</h5>
-        <p class="card-text">¿Buscando periféricos duraderos? Encuéntralos en Razer</p>
-        <a href="https://www.razer.com/" target="_blank" class="btn btn-primary">Visitar sitio web</a>
-      </div>
-    </div>
-    <!-- Card Logitech -->
-    <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card sponsorCard">
-      <div class="card-img-top sponsorsImagenLogitech"></div>
-      <div class="card-body cardCuerpo">
-        <h5 class="card-title">PRODUCTOS Logitech</h5>
-        <p class="card-text">Prueba nuestros nuevos periféricos de la rama Logitech G.</p>
-        <a href="https://www.logitechstore.com.ar/logitech-g" target="_blank" class="btn btn-primary">Visitar sitio web</a>
-      </div>
-    </div>
-    <!-- Card HyperX -->
-    <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card sponsorCard">
-      <div class="card-img-top sponsorsImagenHyperX"></div>
-      <div class="card-body cardCuerpo">
-        <h5 class="card-title">PRODUCTOS HyperX</h5>
-        <p class="card-text">Lo mejor en micrófonos y periféricos inalámbricos. Nuevo HyperX Quadcast S RGB</p>
-        <a href="https://www.hyperxgaming.com/es" target="_blank" class="btn btn-primary">Visitar sitio web</a>
-      </div>
-    </div>
-    <!-- Card Corsair -->
-    <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card sponsorCard">
-      <div class="card-img-top sponsorsImagenCorsair"></div>
-      <div class="card-body cardCuerpo">
-        <h5 class="card-title">PRODUCTOS Corsair</h5>
-        <p class="card-text">Prueba nuestras RAM Vengeance, principales competidoras en velocidad del mercado.</p>
-        <a href="https://www.corsair.com/lm/es/" target="_blank" class="btn btn-primary">Visitar sitio web</a>
-      </div>
-    </div>
-    <!-- Card Coolermaster -->
-    <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card sponsorCard">
-      <div class="card-img-top sponsorsImagenCoolermaster"></div>
-      <div class="card-body cardCuerpo">
-        <h5 class="card-title">PRODUCTOS Coolermaster</h5>
-        <p class="card-text">¿Buscando una fuente confiable y duradera? Visítanos.</p>
-        <a href="https://www.coolermaster.com/" target="_blank" class="btn btn-primary">Visitar sitio web</a>
-      </div>
-    </div>
-    <!-- Card ASUS -->
-    <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card sponsorCard">
-      <div class="card-img-top sponsorsImagenAsus"></div>
-      <div class="card-body cardCuerpo">
-        <h5 class="card-title">PRODUCTOS ASUS</h5>
-        <p class="card-text">Líderes en el mercado de portatiles para gaming y diseño.</p>
-        <a href="https://www.asus.com/ar/" target="_blank" class="btn btn-primary">Visitar sitio web</a>
-      </div>
-    </div>
-    <div class="paddingBottom"></div>
-  </section>
-  </main>
   <!-- Final main -->
   <!-- Inicio footer -->
   <footer class="footer">
@@ -240,6 +241,7 @@
   <!-- Final footer -->
   <script src="https://kit.fontawesome.com/e577b0e2a9.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/app.js"></script>
 </body>
 
 </html>

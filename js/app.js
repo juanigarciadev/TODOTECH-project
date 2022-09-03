@@ -1,23 +1,15 @@
 // Modo oscuro
-const btnSwitch = document.querySelector('#switchModoOscuro')
+const btnSwitch = document.getElementById('switchModoOscuro')
 
-btnSwitch.addEventListener('click', () => {
+btnSwitch.addEventListener('click', (e) => {
+    e.preventDefault()
     document.body.classList.toggle('dark')
     btnSwitch.classList.toggle('active')
 
     // Guardamos el modo en el localStorage.
-    if (document.body.classList.contains('dark')) {
-        localStorage.setItem('dark-mode', 'true')
-    } else {
-        localStorage.setItem('dark-mode', 'false')
-    }
+    document.body.classList.contains('dark') ? localStorage.setItem('dark-mode', 'true') : localStorage.setItem('dark-mode', 'false')
 })
 
 // Obtenemos el modo actual.
 
-if (localStorage.getItem('dark-mode') === 'true') {
-    document.body.classList.add('dark')
-} else {
-    document.body.classList.remove('dark')
-}
-
+localStorage.getItem('dark-mode') === 'true' ? document.body.classList.add('dark') : document.body.classList.remove('dark')

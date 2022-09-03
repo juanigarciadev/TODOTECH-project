@@ -458,6 +458,36 @@ body {
   /* Eliminar scroll lateral */
   overflow-x: hidden;
   background-color: var(--colorFondo); }
+  body.dark .navbar {
+    color: white;
+    background-color: #181818; }
+  body.dark .navbar-brand {
+    content: url("../images/logotipoheaderblanco.png"); }
+  body.dark .nav-link {
+    color: white; }
+    body.dark .nav-link:hover {
+      color: var(--colorCorporativo);
+      transition: all .3s; }
+  body.dark .navSettings {
+    color: white; }
+    body.dark .navSettings:hover {
+      color: var(--colorCorporativo);
+      transition: all .3s; }
+  body.dark .dropdown-menu {
+    background-color: #181818; }
+  body.dark .dropdown-toggle {
+    color: white; }
+  body.dark .dropdown-item {
+    color: white; }
+  body.dark .sponsorsMain {
+    background-color: #181818; }
+  body.dark .imgSponsors, body.dark .card-img-top {
+    filter: invert(100%); }
+  body.dark .main {
+    color: white;
+    background-color: #202020; }
+  body.dark .sponsorCard {
+    background-color: #181818; }
 
 /* Solución para imagenes borrosas al usar "transform: scale()", sacado de stack overflow */
 .imgSponsors {
