@@ -75,6 +75,9 @@ body {
     .sponsorCard {
       background-color: #181818;
     }
+    .div-remaining {
+      background-color: #202020;
+    }
   }
 }
 
@@ -106,3 +109,7 @@ body {
 .paginaSeleccionada {
   color: var(--colorCorporativo);
 }
+
+.div-remaining { 
+	flex: 1; 
+} 

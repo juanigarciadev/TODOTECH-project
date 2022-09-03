@@ -492,6 +492,8 @@ body {
     background-color: #202020; }
   body.dark .sponsorCard {
     background-color: #181818; }
+  body.dark .div-remaining {
+    background-color: #202020; }
 
 /* Solución para imagenes borrosas al usar "transform: scale()", sacado de stack overflow */
 .imgSponsors {
@@ -518,6 +520,9 @@ body {
 
 .paginaSeleccionada {
   color: var(--colorCorporativo); }
+
+.div-remaining {
+  flex: 1; }
 
 @media screen and (max-width: 2560px) and (min-width: 1440px) {
   .bannerArmaTuPcMobile, .microprocesadorIntelMobile, .microprocesadorAmdMobile {
