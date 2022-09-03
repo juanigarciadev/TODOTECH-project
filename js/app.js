@@ -19,9 +19,12 @@ localStorage.getItem('dark-mode') === 'true' ? document.body.classList.add('dark
 // Notificaciones para contactos.html
 const enviarFormulario = document.getElementById('enviarForm')
 const resetFormulario = document.getElementById('resetForm')
+const nombreForm = document.getElementById('nombre-completo')
+const emailForm = document.getElementById('email')
+const consultaForm = document.getElementById('consulta')
 
-enviarFormulario.onclick = (e) => {
-    e.preventDefault
+enviarFormulario.onsubmit = (e) => {
+    e.preventDefault()
     Toastify({
         text: "Enviando formulario, por favor, espere hasta ser redirigido.",
         avatar: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/whatsapp/238/white-heavy-check-mark_2705.png",
@@ -37,12 +40,12 @@ enviarFormulario.onclick = (e) => {
 resetFormulario.onclick = () => {
     Toastify({
         text: "Formulario restablecido exitósamente.",
-        avatar: "https://cdn-0.emojis.wiki/emoji-pics/facebook/cross-mark-button-facebook.png",
+        avatar: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/whatsapp/238/white-heavy-check-mark_2705.png",
         duration: 2000,
         stopOnFocus: false,
         className: "info",
         style: {
-            background: "linear-gradient(to right, #FE8227, #FE2727)",
+            background: "linear-gradient(to right, #15B206, #51E721)",
         }
     }).showToast();
 }
