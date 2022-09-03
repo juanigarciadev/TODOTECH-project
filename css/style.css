@@ -473,6 +473,8 @@ body {
     body.dark .navSettings:hover {
       color: var(--colorCorporativo);
       transition: all .3s; }
+  body.dark .settingsText {
+    color: white; }
   body.dark .dropdown-menu {
     background-color: #181818; }
   body.dark .dropdown-toggle {
