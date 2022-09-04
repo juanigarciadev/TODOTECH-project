@@ -79,3 +79,7 @@ To be able to apply Bootstrap it can be done in two ways:
 "<script src="./js/bootsrap.js"></script>"
 ```
 </div>
+</br>
+<div align="center">
+<p>Made with <3</p>
+</div>
