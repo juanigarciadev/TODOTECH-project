@@ -5,18 +5,18 @@ package.json
 
 # Sass
 sass.md
-.scss/
-.layout/
+scss/
+layout/
 _footer.scss
 _navbar.scss
-.sections/
+sections/
 _armatupc.scss
 _contacto.scss
 _index.scss
 _reset-variables.scss
 _sobrenosotros.scss
 _sponsors.scss
-.utilities/
+utilities/
 _extend.scss
 _mediaquery.scss
 _mixins.scss
