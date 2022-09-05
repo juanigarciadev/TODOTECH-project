@@ -1,10 +1,16 @@
 # Node
-node_modules/
+.node_modules/
 package-lock.json
 package.json
 
 # Sass
 sass.md
+.scss/
+.layout/
 
 # VSCode
 .vscode/
+
+# Utilidades
+seo.md
+sitemap.xml
