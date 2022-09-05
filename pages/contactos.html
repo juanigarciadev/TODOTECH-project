@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="todotech, stock, consulta, contacto" />
-  <meta name="description" content="¿Tenés dudas? te proporcionamos las formas de contactarnos. Excelente financiación, garantía de principio a fin y atención al cliente."/>
+  <meta name="description"
+    content="¿Tenés dudas? te proporcionamos las formas de contactarnos. Excelente financiación, garantía de principio a fin y atención al cliente." />
   <link rel="shortcut icon" href="../images/todotechlogo.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
@@ -69,25 +70,11 @@
             <a href="#"><i class="navSettings fas fa-shopping-cart"></i><strong
                 class="settingsText">Carrito</strong></a>
             <!-- Boton de usuario -->
-            <a href="#" class="userButton"><i class="navSettings fa-solid fa-user"></i> <strong
+            <a href="./ingresar.html" class="userButton"><i class="navSettings fa-solid fa-user"></i> <strong
                 class="settingsText">Usuario</strong></a>
-            <div class="dropdown">
-              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <i class="navSettings fa-solid fa-gear"></i>
-                <strong class="settingsText">Ajustes</strong>
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <!-- Modo oscuro -->
-                <li id="switchModoOscuro"><a class="dropdown-item" href="">Modo Oscuro</a>
-                </li>
-                <hr class="dropdown-divider">
-                <!-- Alternar ingles-español -->
-                <li><a class="dropdown-item" href="#">Idioma</a></li>
-                <hr class="dropdown-divider">
-                <li><a class="dropdown-item" href="#">Otro</a></li>
-              </ul>
-            </div>
+            <!-- Modo oscuro -->
+            <a href="#" id="switchModoOscuro"><i class="navSettings fa-solid fa-circle-half-stroke"></i><strong
+                class="settingsText">Ajustes</strong></a>
           </section>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="¿Estás perdido?, úsame." aria-label="Search">
@@ -108,20 +95,23 @@
           <h4 class="paddingBottom">Consultar stock en camino</h4>
           <!-- Formulario de nombre completo + padding -->
           <label for="nombre-completo" name="nombre-completo" id="nombre-completo"></label>
-          <input type="text" placeholder="Nombre y apellido" name="nombre-completo" class="datosContacto" required>
+          <input type="text" placeholder="Nombre y apellido" name="nombre-completo" class="datosContacto input"
+            required>
           <div class="paddingBottom"></div>
           <!-- Formulario de correo electrónico + padding -->
           <label for="email" name="email" id="email"></label>
-          <input type="email" placeholder="Correo electrónico" name="email" id="email" class="datosContacto" required>
+          <input type="email" placeholder="Correo electrónico" name="email" id="email" class="datosContacto input"
+            required>
           <div class="paddingBottom"></div>
           <!-- Cuadro de texto para escribir la consulta -->
-          <textarea name="consulta" placeholder="Escriba aquí su consulta." id="consulta" cols="50" rows="10" class="textAreaContacto" required></textarea>
+          <textarea name="consulta" placeholder="Escriba aquí su consulta." id="consulta" cols="50" rows="10"
+            class="textAreaContacto input" required></textarea>
           <div class="paddingBottom"></div>
           <!-- Formulario de selección de país -->
           <div class="selectPosition">
             <label for="pais" name="pais" id="seleccionarPais">
               <div>
-                <select name="pais" class="select">
+                <select name="pais" class="select input">
                   <option value="seleccion">Seleccione su país</option>
                   <option value="arg">Argentina</option>
                   <option value="cl">Chile</option>
@@ -146,6 +136,7 @@
             <label for="submit">
               <input type="submit" value="Enviar consulta" class="enviarResetContacto" id="enviarForm">
             </label>
+            <div class="miniPaddingBottom"></div>
             <label for="reset">
               <input type="reset" value="Restablecer" class="enviarResetContacto" id="resetForm">
             </label>
