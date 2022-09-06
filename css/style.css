@@ -1009,6 +1009,16 @@ body {
     height: 20px; }
   .contenedorLogin {
     width: 50vw; }
+  .elegirMarcaPC {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px; }
+  .recuadroElegirMarcaPCIntel, .recuadroElegirMarcaPCAMD {
+    display: flex;
+    min-width: 50vw;
+    max-width: 70vw;
+    height: 40vh; }
   .footer {
     font-size: 15px; }
   .footer p {
@@ -1082,6 +1092,10 @@ body {
     font-size: 14px;
     width: 150px;
     height: 20px; }
+  .elegirMarcaPC {
+    gap: 30px; }
+  .recuadroElegirMarcaPCIntel, .recuadroElegirMarcaPCAMD {
+    max-height: 20vh; }
   .contenedorLogin {
     width: 60vw; }
   .tarjetasFooter {
@@ -1176,6 +1190,14 @@ body {
     align-items: center; }
   .contenedorLogin {
     width: 80vw; }
+  .elegirMarcaPC {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .recuadroElegirMarcaPCIntel, .recuadroElegirMarcaPCAMD {
+    min-width: 70vw;
+    height: 40vh; }
   .footer {
     font-size: 15px; }
   .footer p {
@@ -1281,6 +1303,10 @@ body {
     align-items: center; }
   .contenedorLogin {
     width: 80vw; }
+  .elegirMarcaPC {
+    gap: 20px; }
+  .recuadroElegirMarcaPCIntel, .recuadroElegirMarcaPCAMD {
+    max-height: 20vh; }
   .footer {
     font-size: 10px; }
   .footer p {
@@ -1355,6 +1381,9 @@ body {
 
 /* Mobile S */
 @media screen and (max-width: 320px) {
+  .navbar > div.container-fluid {
+    display: flex;
+    justify-content: center; }
   .main ul {
     text-align: center; }
   .main h4 {
