@@ -17,7 +17,9 @@ const usuario = new Usuario("Pepe", "HelloWorld!")
 const usuario2 = new Usuario("NightShadow", "mishijoslosamo")
 const usuario3 = new Usuario("NachotaGG", "JustMyDeveloperEmailhaha")
 
-
+// const usuario4 = new Usuario(...usuario)
+// usuario4.user = "Ricardo"
+// usuario4.password = "Fort"
 
 usuarios.push(usuario, usuario2, usuario3);
 
@@ -30,9 +32,11 @@ formulario.addEventListener("submit", (e) => {
     for (let user of usuarios) {
         if (user.user == userLogin && user.password == passwordLogin) {
             toastInicioSesionExitoso()
-            window.location.href = "../index.html"
+            setTimeout(() => {
+                window.location.href = "../index.html"
+            }, 1300);
             localStorage.setItem("usuario", user.user);
-        } else if ((user.user != userLogin) || (user.password != passwordLogin)) {
+        } else if ((user.user != userLogin) && (user.password != passwordLogin)) {
             resultado.innerHTML = `
             <div class="paddingBottom"></div>
             <p>Credenciales incorrectas, volvé a intentarlo.</p>`

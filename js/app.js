@@ -59,7 +59,6 @@ let stockProductos = [
 ]
 
 
-
 // Se define el DOM
 const contenedorCarrito = document.getElementById('carrito-contenedor')
 const botonVaciar = document.getElementById('vaciar-carrito')
