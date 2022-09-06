@@ -10,6 +10,7 @@
     content="¿Tenés dudas?, nosotros te las resolvemos. Excelente financiación, garantía de principio a fin y atención al cliente." />
   <link rel="shortcut icon" href="../images/todotechlogo.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
   <link rel="stylesheet" href="../css/style.css" />
   <script src="https://kit.fontawesome.com/e577b0e2a9.js" crossorigin="anonymous"></script>
   <title>TODOTECH | Preguntas frecuentes</title>
@@ -34,6 +35,10 @@
                 aria-expanded="false"><i class="fa-solid fa-bars"></i> Categorías
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./ensambles.html">Ensambles</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
                 <li><a class="dropdown-item" href="./microprocesadores.html">Microprocesadores</a>
                 </li>
                 <li>
@@ -41,10 +46,6 @@
                 </li>
                 <li><a class="dropdown-item" href="./tarjetasdevideo.html">Tarjetas de video</a>
                 </li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Periféricos</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -67,8 +68,8 @@
           <section class="settings">
             <hr class="divider">
             <!-- Carrito -->
-            <a href="#"><i class="navSettings fas fa-shopping-cart"></i><strong
-                class="settingsText">Carrito</strong></a>
+            <button id="boton-carrito"><i class="navSettings fas fa-shopping-cart"></i><span
+                id="contadorCarrito" class="contadorCarrito">0</span></button>
             <!-- Boton de usuario -->
             <a href="./ingresar.html" class="userButton"><i class="navSettings fa-solid fa-user"></i> <strong
                 class="settingsText">Usuario</strong></a>
@@ -149,6 +150,19 @@
         </div>
       </div>
     </section>
+    <div class="modal-contenedor">
+      <div class="modal-carrito">
+        <h3>Carrito</h3>
+        <button class="btnCarritoCerrar" id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+        <div id="carrito-contenedor">
+        </div>
+        <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+        <div class="containerBtnModal">
+          <button id="vaciar-carrito" class="boton-agregar">Eliminar todo lo seleccionado</button>
+          <button id="realizar-compra" class="boton-comprar">Realizar compra</button>
+        </div>
+      </div>
+    </div>
   </main>
   <div class="div-remaining"></div>
   <!-- Inicio footer -->
@@ -198,6 +212,7 @@
   <!-- Final footer -->
   <script src="https://kit.fontawesome.com/e577b0e2a9.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script src="../js/app.js"></script>
 </body>
 

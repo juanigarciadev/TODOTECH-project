@@ -354,6 +354,191 @@ h4 {
 h1 {
   display: none; }
 
+.highlightedText {
+  color: red; }
+
+darkHighlightedText {
+  color: red; }
+
+.anchor {
+  color: white;
+  text-decoration: none; }
+
+.anchor:hover {
+  color: #ff0038;
+  transition: all 0.3s; }
+
+#boton-carrito {
+  color: black;
+  font-size: 20px;
+  transition: all 0.3s;
+  margin-left: 10px;
+  background-color: transparent;
+  border: none; }
+
+#boton-carrito:hover {
+  cursor: pointer;
+  color: #ff0038;
+  transition: all 0.3s; }
+
+#boton-carrito:focus {
+  outline: none; }
+
+#contenedor-productos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+/* Tarjeta contenedora del producto */
+.producto {
+  max-width: 30%;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 20px;
+  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.3);
+  background-color: #ebebeb;
+  color: black;
+  border-radius: 5px; }
+
+.producto:hover {
+  transform: scale(1.01);
+  transition: all 0.3s; }
+
+.precioProducto {
+  font-weight: 700;
+  color: black; }
+
+.containerBtnModal {
+  display: flex;
+  justify-content: space-between; }
+
+.boton-agregar {
+  background-color: var(--colorCorporativo);
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 5px;
+  border: none; }
+
+.boton-agregar:hover {
+  cursor: pointer;
+  background-color: var(--colorCorporativoDark);
+  transition: all 0.3s; }
+
+.boton-agregar:focus {
+  outline: none; }
+
+.boton-comprar {
+  background-color: #15b206;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 5px;
+  border: none; }
+
+.boton-comprar:hover {
+  cursor: pointer;
+  background-color: #108c04;
+  transition: all 0.3s; }
+
+.boton-comprar:focus {
+  outline: none; }
+
+.contenedorBotonAgregarCarrito {
+  display: flex;
+  justify-content: center; }
+
+.modal-contenedor {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  opacity: 0;
+  visibility: hidden; }
+
+.modal-active {
+  opacity: 1;
+  visibility: visible; }
+
+.modal-carrito {
+  position: relative;
+  background-color: white;
+  min-width: 500px;
+  padding: 20px;
+  margin-top: -100%;
+  transition: all 0.5s; }
+
+.modal-active .modal-carrito {
+  margin-top: 0; }
+
+.modal-carrito h3 {
+  color: #ff0038;
+  padding-bottom: 5px; }
+
+.modal-carrito #carritoCerrar {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  color: #ff0038;
+  border: none; }
+
+.btnCarritoCerrar {
+  background-color: #ffffff; }
+
+.fa-times-circle:hover {
+  color: var(--colorCorporativoDark);
+  transition: all 0.3s; }
+
+.fa-times-circle {
+  background-color: white; }
+
+.modal-carrito #carritoCerrar:hover {
+  cursor: pointer; }
+
+.modal-carrito #carritoCerrar:focus {
+  outline: none; }
+
+.modal-carrito .precioProducto {
+  padding-top: 10px; }
+
+.productoEnCarrito {
+  border-left: 5px solid lightgray;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  margin: 5px 0;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between; }
+
+.productoEnCarrito:hover {
+  border-left: 5px solid #ff0038;
+  transition: all .3s; }
+
+.productoEnCarrito p {
+  color: black; }
+
+.boton-eliminar {
+  background-color: white;
+  color: var(--colorCorporativo);
+  border: none;
+  font-size: 20px; }
+
+.boton-eliminar:hover {
+  color: var(--colorCorporativoDark);
+  transition: all 0.3s; }
+
+.boton-eliminar:hover {
+  cursor: pointer; }
+
+.boton-eliminar:focus {
+  outline: none; }
+
 /* Rectángulo de color corporativo arriba del header */
 .rectanguloCabecera {
   width: 100vw;
@@ -382,7 +567,8 @@ h1 {
 
 .settings {
   display: flex;
-  margin-right: 20px; }
+  margin-right: 20px;
+  align-items: center; }
   .settings a {
     text-decoration: none;
     color: black; }
@@ -412,6 +598,9 @@ h1 {
   .btn[type="submit"] {
     --bs-btn-focus-shadow-rgb: none; }
 
+.contadorCarrito {
+  font-size: 16px; }
+
 /* Estilo acordion "sobre nosotros" */
 .accordion-button:not(.collapsed) {
   background-color: var(--colorCorporativoLight);
@@ -440,6 +629,9 @@ h1 {
 
 .form-control::placeholder {
   text-align: left; }
+
+.dropdown-divider {
+  filter: invert(100); }
 
 :root {
   --colorCorporativo: #ff0038;
@@ -516,6 +708,89 @@ body {
     background-color: #181818;
     border: none;
     color: gray; }
+  body.dark #boton-carrito {
+    color: white;
+    font-size: 20px;
+    transition: all 0.3s;
+    margin-left: 10px;
+    background-color: transparent;
+    border: none; }
+  body.dark .producto {
+    max-width: 30%;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.3);
+    background-color: #181818;
+    color: white;
+    border-radius: 5px; }
+  body.dark .modal-contenedor {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    opacity: 0;
+    visibility: hidden; }
+  body.dark .modal-active {
+    opacity: 1;
+    visibility: visible; }
+  body.dark .modal-carrito {
+    position: relative;
+    background-color: #181818;
+    min-width: 500px;
+    padding: 20px;
+    margin-top: -100%;
+    transition: all 0.5s; }
+  body.dark .modal-active .modal-carrito {
+    margin-top: 0; }
+  body.dark .modal-carrito h3 {
+    color: var(--colorCorporativo);
+    padding-bottom: 5px; }
+  body.dark .modal-carrito #carritoCerrar {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    color: var(--colorCorporativo);
+    border: none; }
+  body.dark .btnCarritoCerrar {
+    background-color: #181818; }
+  body.dark .fa-times-circle:hover {
+    color: var(--colorCorporativoDark);
+    transition: all 0.3s; }
+  body.dark .fa-times-circle {
+    background-color: #181818; }
+  body.dark .productoEnCarrito {
+    border-left: 5px solid white;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    margin: 5px 0;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between; }
+  body.dark .productoEnCarrito:hover {
+    border-left: 5px solid var(--colorCorporativo); }
+  body.dark .productoEnCarrito p {
+    color: white; }
+  body.dark .boton-eliminar {
+    background-color: #181818;
+    color: var(--colorCorporativo);
+    border: none;
+    font-size: 20px; }
+  body.dark .boton-eliminar:hover {
+    color: var(--colorCorporativoDark);
+    transition: all 0.3s; }
+  body.dark .boton-eliminar:hover {
+    cursor: pointer; }
+  body.dark .boton-eliminar:focus {
+    outline: none; }
+  body.dark .precioProducto {
+    color: white; }
 
 /* Solución para imagenes borrosas al usar "transform: scale()", sacado de stack overflow */
 .imgSponsors {

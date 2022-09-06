@@ -35,6 +35,10 @@
                 aria-expanded="false"><i class="fa-solid fa-bars"></i> Categorías
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./ensambles.html">Ensambles</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
                 <li><a class="dropdown-item" href="./microprocesadores.html">Microprocesadores</a>
                 </li>
                 <li>
@@ -42,10 +46,6 @@
                 </li>
                 <li><a class="dropdown-item" href="./tarjetasdevideo.html">Tarjetas de video</a>
                 </li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Periféricos</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -67,8 +67,8 @@
           <section class="settings">
             <hr class="divider">
             <!-- Carrito -->
-            <a href="#"><i class="navSettings fas fa-shopping-cart"></i><strong
-                class="settingsText">Carrito</strong></a>
+            <button id="boton-carrito"><i class="navSettings fas fa-shopping-cart"></i><span
+                id="contadorCarrito" class="contadorCarrito">0</span></button>
             <!-- Boton de usuario -->
             <a href="./ingresar.html" class="userButton"><i class="navSettings fa-solid fa-user"></i> <strong
                 class="settingsText">Usuario</strong></a>
@@ -162,6 +162,19 @@
           referrerpolicy="no-referrer-when-downgrade" class="mapaContacto"></iframe>
       </div>
     </section>
+    <div class="modal-contenedor">
+      <div class="modal-carrito">
+        <h3>Carrito</h3>
+        <button class="btnCarritoCerrar" id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+        <div id="carrito-contenedor">
+        </div>
+        <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+        <div class="containerBtnModal">
+          <button id="vaciar-carrito" class="boton-agregar">Eliminar todo lo seleccionado</button>
+          <button id="realizar-compra" class="boton-comprar">Realizar compra</button>
+        </div>
+      </div>
+    </div>
   </main>
 </body>
 <!-- Inicio footer -->
