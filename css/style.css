@@ -958,7 +958,7 @@ body {
     font-size: 15px; }
   .settings {
     display: flex;
-    flex-direction: column; }
+    gap: 20px; }
   .settings i {
     margin: 1px;
     padding-top: 10px;
@@ -1004,6 +1004,8 @@ body {
     font-size: 15px;
     width: 150px;
     height: 20px; }
+  .contenedorLogin {
+    width: 50vw; }
   .footer {
     font-size: 15px; }
   .footer p {
@@ -1077,6 +1079,8 @@ body {
     font-size: 14px;
     width: 150px;
     height: 20px; }
+  .contenedorLogin {
+    width: 60vw; }
   .tarjetasFooter {
     height: 20px; }
   .tarjetasFooterDiv {
