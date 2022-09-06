@@ -13,9 +13,6 @@ btnSwitch.addEventListener('click', (e) => {
 // Obtenemos el modo actual.
 localStorage.getItem('dark-mode') === 'true' ? document.body.classList.add('dark') : document.body.classList.remove('dark')
 
-
-
-
 // Notificaciones para contactos.html
 const enviarFormulario = document.getElementById('enviarForm')
 const resetFormulario = document.getElementById('resetForm')
