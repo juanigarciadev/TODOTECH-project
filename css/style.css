@@ -399,10 +399,9 @@ h1 {
   background-color: #ffffff;
   color: black;
   border-radius: 5px; }
-
-.producto:hover {
-  transform: scale(1.01);
-  transition: all 0.3s; }
+  .producto:hover {
+    transform: scale(1.01);
+    transition: all 0.3s; }
 
 .precioProducto {
   font-weight: 700;
@@ -419,14 +418,12 @@ h1 {
   font-weight: 700;
   padding: 5px;
   border: none; }
-
-.boton-agregar:hover {
-  cursor: pointer;
-  background-color: var(--colorCorporativoDark);
-  transition: all 0.3s; }
-
-.boton-agregar:focus {
-  outline: none; }
+  .boton-agregar:hover {
+    cursor: pointer;
+    background-color: var(--colorCorporativoDark);
+    transition: all 0.3s; }
+  .boton-agregar:focus {
+    outline: none; }
 
 .boton-comprar {
   background-color: #15b206;
@@ -435,14 +432,12 @@ h1 {
   font-weight: 700;
   padding: 5px;
   border: none; }
-
-.boton-comprar:hover {
-  cursor: pointer;
-  background-color: #108c04;
-  transition: all 0.3s; }
-
-.boton-comprar:focus {
-  outline: none; }
+  .boton-comprar:hover {
+    cursor: pointer;
+    background-color: #108c04;
+    transition: all 0.3s; }
+  .boton-comprar:focus {
+    outline: none; }
 
 .contenedorBotonAgregarCarrito {
   display: flex;
@@ -487,22 +482,19 @@ h1 {
   font-size: 20px;
   color: #ff0038;
   border: none; }
+  .modal-carrito #carritoCerrar:hover {
+    cursor: pointer; }
+  .modal-carrito #carritoCerrar:focus {
+    outline: none; }
 
 .btnCarritoCerrar {
   background-color: #ffffff; }
 
-.fa-times-circle:hover {
-  color: var(--colorCorporativoDark);
-  transition: all 0.3s; }
-
 .fa-times-circle {
   background-color: white; }
-
-.modal-carrito #carritoCerrar:hover {
-  cursor: pointer; }
-
-.modal-carrito #carritoCerrar:focus {
-  outline: none; }
+  .fa-times-circle:hover {
+    color: var(--colorCorporativoDark);
+    transition: all 0.3s; }
 
 .modal-carrito .precioProducto {
   padding-top: 10px; }
@@ -540,7 +532,7 @@ h1 {
   outline: none; }
 
 .carritoVacioMsj {
-  color: white; }
+  color: black; }
 
 /* Rectángulo de color corporativo arriba del header */
 .rectanguloCabecera {
@@ -644,7 +636,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #eeeeee;
+  background-color: #e5e5e5;
   width: 30vw;
   height: 50vh;
   border-radius: 7px; }
@@ -656,7 +648,8 @@ h1 {
 .formInput {
   width: 300px;
   border: none;
-  position: absolute; }
+  position: absolute;
+  border-radius: 5px; }
   .formInput::placeholder {
     text-align: left; }
 
@@ -847,6 +840,8 @@ body {
   body.dark .boton-eliminar:focus {
     outline: none; }
   body.dark .precioProducto {
+    color: white; }
+  body.dark .carritoVacioMsj {
     color: white; }
 
 /* Solución para imagenes borrosas al usar "transform: scale()", sacado de stack overflow */
