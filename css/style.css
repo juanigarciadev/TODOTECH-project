@@ -1167,6 +1167,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; }
+  .contenedorLogin {
+    width: 80vw; }
   .footer {
     font-size: 15px; }
   .footer p {
@@ -1270,6 +1272,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; }
+  .contenedorLogin {
+    width: 80vw; }
   .footer {
     font-size: 10px; }
   .footer p {
@@ -1319,6 +1323,8 @@ body {
     width: 100px; }
   .enviarResetDiv {
     text-align: center; }
+  .contenedorLogin {
+    width: 80vw; }
   .footer {
     display: flex;
     flex-direction: column; }
@@ -1372,6 +1378,8 @@ body {
     transform: scale(1); }
   .productosRecomendados img {
     width: 240px; }
+  .contenedorLogin {
+    width: 80vw; }
   .footer {
     display: flex;
     flex-direction: column; }
