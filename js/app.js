@@ -80,7 +80,7 @@ const botonAbrir = document.getElementById('boton-carrito')
 const botonCerrar = document.getElementById('carritoCerrar')
 const modalCarrito = document.getElementsByClassName('modal-carrito')[0]
 const realizarCompra = document.getElementById('realizar-compra')
-
+const carritoVacioMensaje = document.getElementById('carritoVacioMensaje')
 
 botonAbrir.addEventListener('click', () => {
     contenedorModal.classList.toggle('modal-active')
@@ -133,7 +133,7 @@ stockProductos.forEach((producto) => {
     // Se ingresa al div para agregarle el contenido llamando a las propiedades definidas en stockProductos.
     div.innerHTML = `
     <img src=${producto.img} class="img-fluid" alt="Computadora muy bonita, comprala :)">
-    <h3 class="highlightedText">${producto.procesador}</h3>
+    <h3 class="highlightedText boldTitle">${producto.procesador}</h3>
     <p><strong class="darkHighlightedText">Socket:</strong> ${producto.socket}</p>
     <p><strong class="darkHighlightedText">Motherboard:</strong> ${producto.motherboard}</p>
     <p><strong class="darkHighlightedText">RAM:</strong> ${producto.gbRam}</p>

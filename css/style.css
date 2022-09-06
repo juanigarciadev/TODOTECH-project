@@ -355,10 +355,10 @@ h1 {
   display: none; }
 
 .highlightedText {
-  color: red; }
+  color: var(--colorCorporativo); }
 
-darkHighlightedText {
-  color: red; }
+.darkHighlightedText {
+  color: var(--colorCorporativoDark); }
 
 .anchor {
   color: white;
@@ -386,7 +386,7 @@ darkHighlightedText {
 
 #contenedor-productos {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap; }
 
 /* Tarjeta contenedora del producto */
@@ -395,7 +395,7 @@ darkHighlightedText {
   padding: 10px;
   margin: 10px;
   margin-bottom: 20px;
-  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 3px 2px rgba(0, 0, 0, 0.3);
   background-color: #ebebeb;
   color: black;
   border-radius: 5px; }
@@ -538,6 +538,9 @@ darkHighlightedText {
 
 .boton-eliminar:focus {
   outline: none; }
+
+.carritoVacioMsj {
+  color: white; }
 
 /* Rectángulo de color corporativo arriba del header */
 .rectanguloCabecera {
@@ -823,6 +826,12 @@ body {
 
 .div-remaining {
   flex: 1; }
+
+.boldTitle {
+  font-weight: bold; }
+
+::selection {
+  background-color: var(--colorCorporativoLight); }
 
 .contenedorMainLogin {
   display: flex;
