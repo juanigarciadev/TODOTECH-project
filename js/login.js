@@ -17,10 +17,6 @@ const usuario = new Usuario("Pepe", "HelloWorld!")
 const usuario2 = new Usuario("NightShadow", "mishijoslosamo")
 const usuario3 = new Usuario("NachotaGG", "JustMyDeveloperEmailhaha")
 
-// const usuario4 = new Usuario(...usuario)
-// usuario4.user = "Ricardo"
-// usuario4.password = "Fort"
-
 usuarios.push(usuario, usuario2, usuario3);
 
 

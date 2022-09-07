@@ -58,7 +58,6 @@ let stockProductos = [
     { id: 3, nombre: "PC Athlon 3000G", motherboard: "Asus A320m-k", socket: "AM4", procesador: "Athlon 3000G", tipoRam: "DDR4", gbRam: "8GB", velRam: "2666mhz", grafica: "N/A", fuenteCertificada: false, wattsFuente: 500, precio: 70000, cantidad: 1, img: '../images/pc3.png' }
 ]
 
-
 // Se define el DOM
 const contenedorCarrito = document.getElementById('carrito-contenedor')
 const botonVaciar = document.getElementById('vaciar-carrito')

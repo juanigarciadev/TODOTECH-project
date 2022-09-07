@@ -458,7 +458,8 @@ h1 {
 
 .modal-active {
   opacity: 1;
-  visibility: visible; }
+  visibility: visible;
+  z-index: 100; }
 
 .modal-carrito {
   position: relative;
