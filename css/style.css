@@ -678,7 +678,7 @@ h1 {
   gap: 50px; }
 
 .metodoLogin {
-  background-color: #202020;
+  background-color: white;
   border-radius: 5px;
   cursor: pointer; }
 
@@ -698,7 +698,7 @@ h1 {
   --colorCorporativo: #ff0038;
   --colorCorporativoLight: #feadbfbd;
   --colorCorporativoDark: #e00131;
-  --colorFondo: #EDEDED;
+  --colorFondo: #ededed;
   --darkMode: #181818;
   --lightDarkMode: #2e2e2e; }
 
@@ -769,6 +769,16 @@ body {
     background-color: #181818;
     border: none;
     color: gray; }
+  body.dark .contenedorMetodosLogin {
+    display: flex;
+    justify-content: center;
+    gap: 50px; }
+  body.dark .metodoLogin {
+    background-color: #202020;
+    border-radius: 5px;
+    cursor: pointer; }
+  body.dark .githubLogo {
+    filter: invert(100%); }
   body.dark #boton-carrito {
     color: white;
     font-size: 20px;
