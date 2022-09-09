@@ -672,6 +672,16 @@ h1 {
 .forgotPassword {
   text-align: right; }
 
+.contenedorMetodosLogin {
+  display: flex;
+  justify-content: center;
+  gap: 50px; }
+
+.metodoLogin {
+  background-color: #202020;
+  border-radius: 5px;
+  cursor: pointer; }
+
 .loginAnchor {
   color: gray; }
   .loginAnchor:hover {
@@ -882,6 +892,9 @@ body {
 
 .displayNone {
   display: none; }
+
+.textCenter {
+  text-align: center; }
 
 ::selection {
   background-color: var(--colorCorporativoLight); }

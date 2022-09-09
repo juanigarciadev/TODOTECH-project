@@ -1,3 +1,4 @@
+// Se llama al DOM
 const formulario = document.getElementById('login');
 const formRegister = document.getElementById('register');
 const resultado = document.getElementById('error');
@@ -13,9 +14,9 @@ class Usuario {
 
 let usuarios = [];
 // Se crean usuarios existentes utilizando el constructor de objetos
-const usuario = new Usuario("Pepe", "HelloWorld!")
+const usuario = new Usuario("NachotaGG", "JustMyDeveloperEmailhaha")
 const usuario2 = new Usuario("NightShadow", "mishijoslosamo")
-const usuario3 = new Usuario("NachotaGG", "JustMyDeveloperEmailhaha")
+const usuario3 = new Usuario("Pepe", "HelloWorld!")
 
 usuarios.push(usuario, usuario2, usuario3);
 
@@ -30,13 +31,14 @@ formulario.addEventListener("submit", (e) => {
             toastInicioSesionExitoso()
             setTimeout(() => {
                 window.location.href = "../index.html"
-            }, 1300);
+            }, 1000);
             localStorage.setItem("usuario", user.user);
-        } else if ((user.user != userLogin) && (user.password != passwordLogin)) {
-            resultado.innerHTML = `
-            <div class="paddingBottom"></div>
-            <p>Credenciales incorrectas, volvé a intentarlo.</p>`
-            // En caso de ingresar mal los datos, se elimina la contraseña para que tenga que volver a ser escrita.
+        } else {
+            setTimeout(() => {
+                resultado.innerHTML = `
+                <div class="paddingBottom"></div>
+                <p>Credenciales incorrectas, volvé a intentarlo.</p>`
+            }, 1300);
         }
     }
 })
