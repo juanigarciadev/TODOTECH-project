@@ -73,8 +73,8 @@
                         <button id="boton-carrito"><i class="navSettings fas fa-shopping-cart"></i><span
                                 id="contadorCarrito" class="contadorCarrito">0</span></button>
                         <!-- Boton de usuario -->
-                        <a href="./ingresar.html" class="userButton"><i class="navSettings fa-solid fa-user"></i>
-                            <strong class="settingsText">Usuario</strong></a>
+                        <a href="./ingresar.html" class="userButton"><i class="navSettings fa-solid fa-right-to-bracket"></i>
+                            <strong class="settingsText">Ingresar</strong></a>
                         <!-- Modo oscuro -->
                         <a href="#" id="switchModoOscuro"><i
                                 class="navSettings fa-solid fa-circle-half-stroke"></i><strong class="settingsText">Modo
@@ -91,7 +91,8 @@
     </header>
     <!-- Inicio main -->
     <main class="main paddingMain">
-        <section class="contenedorMainLogin">
+        <!-- Login -->
+        <section class="contenedorMainLogin" id="contenedorLogin">
             <section class="contenedorLogin">
                 <div class="paddingBottom"></div>
                 <h4>Iniciar sesión</h4>
@@ -110,22 +111,64 @@
                     </div>
                     <a href="" class="forgotPassword loginAnchor">Olvidé mi contraseña</a>
                     <div class="paddingBottom"></div>
+                    <div class="paddingBottom"></div>
                     <h4 class="textCenter">También podés ingresar con</h4>
                     <div class="contenedorMetodosLogin paddingBottom">
                         <div class="metodoLogin"><img src="../images/google-logo.png" alt="Logotipo de Google para iniciar sesión en TODOTECH"></div>
                         <div class="metodoLogin"><img src="../images/github-logo.png" class="githubLogo" alt="Logotipo de Github para iniciar sesión en TODOTECH"></div>
+                        <div class="metodoLogin"><img src="../images/linkedin-logo.png" alt="Logotipo de LinkedIN para iniciar sesión en TODOTECH"></div>
                         <div class="metodoLogin"><img src="../images/facebook-logo.png" alt="Logotipo de Facebook para iniciar sesión en TODOTECH"></div>
                     </div>
                     <button type="submit" id="ingresar" class="btnForm">Ingresar</button>
                     <div class="miniPaddingBottom"></div>
-                    <button type="reset" id="reset" class="btnForm">Restablecer</button>
-                    <div class="miniPaddingBottom"></div>
-                    <a href="#" class="loginAnchor">¿No tenés una cuenta? ¡Registrate!</a>
+                    <button type="reset" class="btnForm">Restablecer</button>
+                    <div class="paddingBottom"></div>
+                    <span href="#" class="loginAnchor textCenter miniPaddingBottom">¿No tenés una cuenta? ¡Registrate!</span>
+                    <input type="button" value="Registrarse" class="btnForm textCenter" id="toggleForm">
                     <div class="paddingBottom"></div>
                 </form>
                 <div id="error"></div>
             </section>
         </section>
+        <!-- Register -->
+        <section class="contenedorMainLogin notShown" id="contenedorRegister">
+            <section class="contenedorLogin">
+                <div class="paddingBottom"></div>
+                <h4>Registrarse</h4>
+                <form class="formLogin" id="register" autocomplete="off">
+                    <label for="nombre">Nombre de usuario</label>
+                    <div>
+                        <i class="fa-solid fa-user iconosLogin"></i><input type="text" id="userRegister"
+                            placeholder="Creá un nombre de usuario" class="formInput" required>
+                    </div>
+                    <div class="paddingBottom"></div>
+                    <label for="pass">Contraseña</label>
+                    <div>
+                        <i class="fa-solid fa-lock iconosLogin"></i><input type="password" id="passRegister"
+                            placeholder="Creá una contraseña" class="formInput" required>
+                        <i class="fa-solid fa-eye togglePassword" id="verContra"></i>
+                    </div>
+                    <div class="paddingBottom"></div>
+                    <div class="paddingBottom"></div>
+                    <h4 class="textCenter">También podés ingresar con</h4>
+                    <div class="contenedorMetodosLogin paddingBottom">
+                        <div class="metodoLogin"><img src="../images/google-logo.png" alt="Logotipo de Google para iniciar sesión en TODOTECH"></div>
+                        <div class="metodoLogin"><img src="../images/github-logo.png" class="githubLogo" alt="Logotipo de Github para iniciar sesión en TODOTECH"></div>
+                        <div class="metodoLogin"><img src="../images/linkedin-logo.png" alt="Logotipo de LinkedIN para iniciar sesión en TODOTECH"></div>
+                        <div class="metodoLogin"><img src="../images/facebook-logo.png" alt="Logotipo de Facebook para iniciar sesión en TODOTECH"></div>
+                    </div>
+                    <button type="submit" id="registrar" class="btnForm">Registrarse</button>
+                    <div class="miniPaddingBottom"></div>
+                    <button type="reset" class="btnForm">Restablecer</button>
+                    <div class="paddingBottom"></div>
+                    <span href="#" class="loginAnchor textCenter miniPaddingBottom">¿Ya tenés cuenta? ¡Iniciá sesión!</span>
+                    <input type="button" value="Iniciar sesión" class="btnForm textCenter" id="toggleFormRegister">
+                    <div class="paddingBottom"></div>
+                </form>
+                <div id="error"></div>
+            </section>
+        </section>
+
         <section style="display: none;" id="contenedor-productos"></section>
     </main>
     <div class="modal-contenedor">

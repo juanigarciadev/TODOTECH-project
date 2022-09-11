@@ -4,6 +4,8 @@ const formRegister = document.getElementById('register');
 const resultado = document.getElementById('error');
 const togglePassword = document.getElementById('verContra')
 const usuarioNom = document.getElementById('usuarioNombre')
+const toggleForm = document.getElementById('toggleForm')
+const toggleFormRegister = document.getElementById('toggleFormRegister')
 
 class Usuario {
     constructor(user, password) {
@@ -43,6 +45,22 @@ formulario.addEventListener("submit", (e) => {
     }
 })
 
+
+toggleForm.onclick = (e) => {
+    e.preventDefault()
+    const contenedorLoginForm = document.getElementById('contenedorLogin')
+    const contenedorRegisterForm = document.getElementById('contenedorRegister')
+    contenedorLoginForm.classList.toggle('notShown');
+    contenedorRegisterForm.classList.toggle('notShown')
+}
+
+toggleFormRegister.onclick = (e) => {
+    e.preventDefault()
+    const contenedorLoginForm = document.getElementById('contenedorLogin')
+    const contenedorRegisterForm = document.getElementById('contenedorRegister')
+    contenedorLoginForm.classList.toggle('notShown');
+    contenedorRegisterForm.classList.toggle('notShown')
+}
 
 function toastInicioSesionExitoso() {
     // Se muestra una notificación de que el producto fue agregado al carrito mediante la libreria toastify

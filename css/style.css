@@ -639,7 +639,7 @@ h1 {
   align-items: center;
   background-color: #e5e5e5;
   width: 30vw;
-  height: 50vh;
+  min-height: 50vh;
   border-radius: 7px; }
 
 .formLogin {
@@ -656,8 +656,9 @@ h1 {
 
 .togglePassword {
   position: relative;
-  left: 83%;
-  top: 2px; }
+  left: 77%;
+  top: 2px;
+  cursor: pointer; }
 
 .btnForm {
   border: none;
