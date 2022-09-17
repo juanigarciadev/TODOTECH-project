@@ -933,6 +933,9 @@ body {
 .miniPaddingBottom {
   padding-bottom: 5px; }
 
+.paddingTop {
+  padding-top: 20px; }
+
 .paginaSeleccionada {
   color: var(--colorCorporativo); }
 
