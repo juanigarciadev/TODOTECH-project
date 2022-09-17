@@ -1,0 +1,31 @@
+[
+    {
+        "nombreEmpresa": "COMPRAGAMER",
+        "logotipoEmpresa": "../images/compragamer-logotipo.png",
+        "direccionEmpresa": "Av. Dr. Honorio Pueyrredón 1841",
+        "numeroEmpresa": "0810-220-2780",
+        "urlEmpresa": "https://www.compragamer.com"
+    },
+    {
+        "nombreEmpresa": "VENEX",
+        "logotipoEmpresa": "../images/venex-logotipo.png",
+        "direccionEmpresa": "Félix Frías 1203",
+        "numeroEmpresa": "0810-555-8892",
+        "urlEmpresa": "https://www.venex.com.ar"
+    },
+    {
+        "nombreEmpresa": "GEZATEK",
+        "logotipoEmpresa": "../images/gezatek-logotipo.png",
+        "direccionEmpresa": "Av. Independencia 3485",
+        "numeroEmpresa": "011 7700-0048",
+        "urlEmpresa": "https://www.gezatek.com.ar"
+    },
+    {
+        "nombreEmpresa": "FULLH4RD",
+        "logotipoEmpresa": "../images/fullh4rd-logotipo.png",
+        "direccionEmpresa": "Florida 537 Local 370",
+        "numeroEmpresa": "011 7079-9997",
+        "urlEmpresa": "https://www.fullh4rd.com.ar"
+    }
+]
+

@@ -15,7 +15,6 @@ localStorage.getItem('dark-mode') === 'true' ? document.body.classList.add('dark
 
 // Carrito
 
-
 // Se crea la variable que va a contener el stock.
 let stockProductos = [
     { id: 1, nombre: "PC Gaming R5 5600G", motherboard: "Gigabyte A520M", socket: "AM4", procesador: "Ryzen 5 5600G", tipoRam: "DDR4", gbRam: "16GB", velRam: "3200mhz", grafica: "N/A", fuenteCertificada: true, wattsFuente: 650, precio: 90000, cantidad: 1, img: '../images/pc.png' },
@@ -188,6 +187,41 @@ const actualizarCarrito = () => {
     precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0)
 
 }
+
+
+// Cambio en el texto de Ingresar
+const textoCambiable = document.getElementById('textoCambiableLogin')
+textoCambiable.innerHTML = (`${localStorage.getItem('usuario')}`)
+
+
+let contenedorAfiliadosEmpresas = document.getElementById('contenedorAfiliados')
+
+
+// Contenedor de afiliados en afiliados.html
+function cargarAfiliados() {
+    fetch('../js/afiliados.json')
+        .then(respuesta => respuesta.json())
+        .then(afiliados => {
+            afiliados.forEach(afiliado => {
+                const tarjetaContenedora = document.createElement('div');
+                tarjetaContenedora.classList.add('afiliadoCard')
+                tarjetaContenedora.innerHTML += `
+                <h4 class="highlightedText textCenter">${afiliado.nombreEmpresa}</h4>
+                <img src="${afiliado.logotipoEmpresa}">
+                <strong>Número telefónico:</strong>
+                <p>${afiliado.numeroEmpresa}</p>
+                <strong>Dirección:</strong>
+                <p>${afiliado.direccionEmpresa}</p>
+                <a href="${afiliado.urlEmpresa}" target="_blank" class="btn afiliadosBtn">Ir a la página<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                `;
+                contenedorAfiliadosEmpresas.appendChild(tarjetaContenedora)
+            })
+        })
+        .catch(err => console.log("Hubo un error: " + err.message))
+}
+
+cargarAfiliados()
+
 
 
 

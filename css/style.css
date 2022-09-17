@@ -9,8 +9,10 @@ section.cardContainerSponsors.row.container.text-center {
   margin: auto;
   padding: 0; }
 
-.textoSponsors {
-  max-width: 70vw; }
+.textSponsors {
+  display: flex;
+  max-width: 50vw;
+  text-align: center; }
 
 .cardContainerSponsors {
   display: flex;
@@ -656,7 +658,7 @@ h1 {
 
 .togglePassword {
   position: relative;
-  left: 77%;
+  left: 83%;
   top: 2px;
   cursor: pointer; }
 
@@ -676,7 +678,7 @@ h1 {
 .contenedorMetodosLogin {
   display: flex;
   justify-content: center;
-  gap: 50px; }
+  gap: 25px; }
 
 .metodoLogin {
   background-color: white;
@@ -694,6 +696,42 @@ h1 {
 
 .notShown {
   display: none; }
+
+.contenedorEmpresasAfiliadas {
+  background-color: white;
+  min-height: 50vh; }
+
+.afiliadosMain {
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+
+.afiliadoCard {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  min-height: 400px;
+  width: 250px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px; }
+  .afiliadoCard:hover {
+    transform: scale(1.01);
+    transition: all 0.3s; }
+
+.afiliadoCard img {
+  max-width: 250px; }
+
+.afiliadosBtn {
+  display: flex;
+  align-items: center;
+  gap: 5px; }
+  .afiliadosBtn:hover {
+    color: white; }
 
 :root {
   --colorCorporativo: #ff0038;
@@ -773,7 +811,7 @@ body {
   body.dark .contenedorMetodosLogin {
     display: flex;
     justify-content: center;
-    gap: 50px; }
+    gap: 25px; }
   body.dark .metodoLogin {
     background-color: #202020;
     border-radius: 5px;
@@ -864,6 +902,9 @@ body {
   body.dark .precioProducto {
     color: white; }
   body.dark .carritoVacioMsj {
+    color: white; }
+  body.dark .afiliadoCard {
+    background-color: #181818;
     color: white; }
 
 /* Solución para imagenes borrosas al usar "transform: scale()", sacado de stack overflow */
