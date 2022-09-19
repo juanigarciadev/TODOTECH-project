@@ -310,3 +310,6 @@ function efectuarCompra() {
     }).showToast();
     localStorage.removeItem('carrito')
 }
+
+
+// Made with <3
