@@ -221,7 +221,7 @@ function cargarAfiliados() {
                 contenedorAfiliadosEmpresas.appendChild(tarjetaContenedora)
             })
         })
-        .catch(err => console.log("Hubo un error: " + err.message))
+        .catch(error => console.log("Hubo un error: " + error.message))
 }
 
 cargarAfiliados()
