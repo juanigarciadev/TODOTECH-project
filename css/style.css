@@ -528,6 +528,12 @@ h1 {
 .carritoVacioMsj {
   color: black; }
 
+.carritoVacioContenedorMensaje {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 /* Rectángulo de color corporativo arriba del header */
 .rectanguloCabecera {
   width: 100vw;
