@@ -365,10 +365,9 @@ h1 {
 .anchor {
   color: white;
   text-decoration: none; }
-
-.anchor:hover {
-  color: #ff0038;
-  transition: all 0.3s; }
+  .anchor:hover {
+    color: #ff0038;
+    transition: all 0.3s; }
 
 #boton-carrito {
   color: black;
@@ -377,14 +376,12 @@ h1 {
   margin-left: 10px;
   background-color: transparent;
   border: none; }
-
-#boton-carrito:hover {
-  cursor: pointer;
-  color: #ff0038;
-  transition: all 0.3s; }
-
-#boton-carrito:focus {
-  outline: none; }
+  #boton-carrito:hover {
+    cursor: pointer;
+    color: #ff0038;
+    transition: all 0.3s; }
+  #boton-carrito:focus {
+    outline: none; }
 
 #contenedor-productos {
   display: flex;
@@ -510,29 +507,23 @@ h1 {
   padding: 5px 10px;
   display: flex;
   justify-content: space-between; }
-
-.productoEnCarrito:hover {
-  border-left: 5px solid #ff0038;
-  transition: all 0.3s; }
-
-.productoEnCarrito p {
-  color: black; }
+  .productoEnCarrito p {
+    color: black; }
+  .productoEnCarrito:hover {
+    border-left: 5px solid #ff0038;
+    transition: all 0.3s; }
 
 .boton-eliminar {
   background-color: white;
   color: var(--colorCorporativo);
   border: none;
   font-size: 20px; }
-
-.boton-eliminar:hover {
-  color: var(--colorCorporativoDark);
-  transition: all 0.3s; }
-
-.boton-eliminar:hover {
-  cursor: pointer; }
-
-.boton-eliminar:focus {
-  outline: none; }
+  .boton-eliminar:hover {
+    color: var(--colorCorporativoDark);
+    transition: all 0.3s;
+    cursor: pointer; }
+  .boton-eliminar:focus {
+    outline: none; }
 
 .carritoVacioMsj {
   color: black; }
@@ -726,9 +717,8 @@ h1 {
   .afiliadoCard:hover {
     transform: scale(1.01);
     transition: all 0.3s; }
-
-.afiliadoCard img {
-  max-width: 250px; }
+  .afiliadoCard img {
+    max-width: 250px; }
 
 .afiliadosBtn {
   display: flex;
