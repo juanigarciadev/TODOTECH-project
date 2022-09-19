@@ -356,10 +356,6 @@ h4 {
 h1 {
   display: none; }
 
-.btn:disabled {
-  background-color: var(--colorCorporativoDark);
-  color: white; }
-
 .highlightedText {
   color: var(--colorCorporativo); }
 
@@ -634,6 +630,10 @@ h1 {
 
 .dropdown-divider {
   filter: invert(100); }
+
+.btn:disabled {
+  background-color: var(--colorCorporativoDark);
+  color: white; }
 
 .contenedorMainLogin {
   display: flex;
