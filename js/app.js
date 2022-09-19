@@ -189,13 +189,17 @@ const actualizarCarrito = () => {
 }
 
 
+
 // Cambio en el texto de Ingresar
 const textoCambiable = document.getElementById('textoCambiableLogin')
+
 textoCambiable.innerHTML = (`${localStorage.getItem('usuario')}`)
 
 
-let contenedorAfiliadosEmpresas = document.getElementById('contenedorAfiliados')
 
+
+// Afiliados
+let contenedorAfiliadosEmpresas = document.getElementById('contenedorAfiliados')
 
 // Contenedor de afiliados en afiliados.html
 function cargarAfiliados() {
@@ -226,7 +230,6 @@ cargarAfiliados()
 
 
 // Librerías
-
 
 
 // Toastify
