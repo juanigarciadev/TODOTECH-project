@@ -151,6 +151,7 @@ const eliminarDelCarrito = (prodId) => {
     // Se le pasa el índice del elemento del carrito y se lo elimina.
     carrito.splice(indice, 1)
     toastEliminadoDelCarrito()
+    localStorage.removeItem('carrito')
     actualizarCarrito()
     console.log(carrito)
 }
