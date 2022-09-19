@@ -568,6 +568,9 @@ h1 {
 .settingsText {
   display: none; }
 
+.inputBusqueda {
+  margin-right: 5px; }
+
 /* Estilo personalizado botones */
 .btn {
   display: flex;
@@ -1100,6 +1103,15 @@ body {
     width: 100vw;
     display: flex;
     justify-content: center; }
+  .buscadorNav {
+    display: flex;
+    flex-direction: column;
+    min-width: 90vw;
+    gap: 10px;
+    align-items: center;
+    justify-items: center; }
+  .buscadorNav button {
+    min-width: 90vw; }
   .main {
     font-size: 14px; }
   .sponsorsMain {
@@ -1275,6 +1287,8 @@ body {
 
 /* Mobile L */
 @media screen and (max-width: 425px) {
+  .inputBusqueda {
+    margin-right: 0px; }
   .main ul {
     text-align: center; }
   .main h4 {
